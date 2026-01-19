@@ -13,14 +13,65 @@
 
 
 </head>
-<body class="h-[2000px] font-body">
+<body class="font-body">
 
     <!-- HEADER -->
-    <header class="flex justify-between items-center fixed z-50 bg-black/60 h-20 w-full px-10">
-        <img class="w-20" src="assets/images/logo-barbearia.png" alt="Logo Barbearia">
-        <span id="openMenu" class="material-symbols-outlined text-white cursor-pointer select-none">menu</span>
+    <header class="fixed top-0 left-0 z-50 w-full h-20 bg-black/60 backdrop-blur flex items-center">  
+        <div class="max-w-7xl mx-auto w-full px-6 md:px-16 flex items-center justify-between">
+            <img
+                src="assets/images/logo-barbearia.png"
+                alt="Barbearia Prime"
+                class="w-20">
 
+            <nav class="hidden md:flex items-center gap-10">
+
+                <a href="#inicio"
+                class="font-body text-sm uppercase tracking-widest text-white hover:text-[#F5C77A] transition">
+                    Início
+                </a>
+
+                <a href="#servicos"
+                class="font-body text-sm uppercase tracking-widest text-white hover:text-[#F5C77A] transition">
+                    Serviços
+                </a>
+
+                <a href="#sobre"
+                class="font-body text-sm uppercase tracking-widest text-white hover:text-[#F5C77A] transition">
+                    Sobre
+                </a>
+
+                <a href="#avaliacoes"
+                class="font-body text-sm uppercase tracking-widest text-white hover:text-[#F5C77A] transition">
+                    Avaliações
+                </a>
+
+                <a href="#espaco"
+                class="font-body text-sm uppercase tracking-widest text-white hover:text-[#F5C77A] transition">
+                    Nosso espaço
+                </a>
+
+                <a href="#agendamento"
+                class="ml-4 border border-white px-5 py-2
+                        text-sm uppercase tracking-widest text-white
+                        hover:bg-white hover:text-black transition">
+                    Agendar
+                </a>
+
+            </nav>
+
+            <!-- BOTÃO MENU MOBILE -->
+            <div class="lg:hidden">
+                <span
+                    id="openMenu"
+                    class="material-symbols-outlined text-white cursor-pointer select-none">
+                    menu
+                </span>
+            </div>
+
+        </div>
     </header>
+
+
 
     <!-- MENU CELULAR -->
     <div
@@ -125,8 +176,9 @@
             </div>
 
             <div class="absolute inset-0 bg-black/60 z-10"></div>
-            <div class="relative z-20 h-full flex items-center px-10 max-w-7xl mx-auto">
+            <div class="relative z-20 h-full flex items-center px-6 md:px-16 max-w-7xl mx-auto">
                 <div>
+                    
                     <span
                         class="block font-body text-xs text-gray-300 tracking-[0.35em] uppercase mb-4 opacity-0 translate-y-6 transition-all duration-700 delay-100">
                         Barbearia urbana
@@ -274,8 +326,8 @@
         
         <!-- SEÇÃO SOBRE NÓS -->
         <section
-        class="relative h-[58vh] bg-fixed bg-center bg-cover"
-        style="background-image: url('assets/images/barbearia3.jpeg');">
+        class="relative h-[100vh] bg-fixed bg-center bg-cover"
+        style="background-image: url('assets/images/barbearia7.jpeg');">
 
         <div class="absolute inset-0 bg-black/70"></div>
 
@@ -297,31 +349,30 @@
                         Um ambiente criado para quem valoriza estilo, conforto e autenticidade.
                     </p>
             </div>
-        </div>
-        </section>
-        <section id="sobre" class="bg-black pt-5 pb-20 border-t border-white/10">
-            <div class="max-w-7xl mx-auto px-10 grid md:grid-cols-2 gap-20 items-center">
-                <div class="space-y-10 reveal-right">
-                <div>
-                    <h3 class="font-title text-3xl text-white uppercase mb-2">Atendimento personalizado</h3>
-                    <p class="font-body text-gray-400">Cada cliente é único. O corte acompanha seu estilo.</p>
-                </div>
+            <div class="max-w-7xl mx-auto px-10 grid md:grid-cols-2 gap-20 items-center pt-5">
+                <div class="space-y-5 reveal-right">
+                    <div>
+                        <h3 class="font-title text-3xl text-white uppercase mb-2">Atendimento personalizado</h3>
+                        <p class="font-body text-gray-400">Cada cliente é único. O corte acompanha seu estilo.</p>
+                    </div>
 
-                <div>
-                    <h3 class="font-title text-3xl text-white uppercase mb-2">Profissionais experientes</h3>
-                    <p class="font-body text-gray-400">Equipe especializada e em constante evolução.</p>
-                </div>
+                    <div>
+                        <h3 class="font-title text-3xl text-white uppercase mb-2">Profissionais experientes</h3>
+                        <p class="font-body text-gray-400">Equipe especializada e em constante evolução.</p>
+                    </div>
 
-                <div>
-                    <h3 class="font-title text-3xl text-white uppercase mb-2">Produtos premium</h3>
-                    <p class="font-body text-gray-400">Qualidade que você sente no resultado.</p>
-                </div>
+                    <div>
+                        <h3 class="font-title text-3xl text-white uppercase mb-2">Produtos premium</h3>
+                        <p class="font-body text-gray-400">Qualidade que você sente no resultado.</p>
+                    </div>
                 </div>
             </div>
-            </section>
+        </div>
+        
+        </section>
 
         <!-- SEÇÃO NOSSO ESPAÇO -->
-        <section class="bg-black py-32 border-white/10">
+        <section class="bg-black py-12 border-white/10">
         <div class="max-w-7xl mx-auto px-10">
 
             <div class="mb-16">
@@ -343,7 +394,7 @@
         </section>
 
         <!-- SEÇÃO AVALIAÇÃO -->
-        <section class="bg-[#1F1F1F] py-32 border-white/10">
+        <section class="bg-[#1F1F1F] py-20 border-white/10">
         <div class="max-w-7xl mx-auto px-10">
 
             <div class="mb-16">
@@ -418,7 +469,7 @@
         </section>
 
         <!-- SEÇÃO CTA FINAL-->
-        <section id="agendamento" class="bg-black py-40 border-white/10 text-center">
+        <section id="agendamento" class="bg-black py-10 border-white/10 text-center">
         <h2 class="font-title text-white text-7xl uppercase leading-none mb-8">
             Pronto para<br>
             mudar o <span class="text-[#F5C77A]">visual?</span>
