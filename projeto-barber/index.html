@@ -14,73 +14,108 @@
 
 </head>
 <body class="h-[2000px] font-body">
+
+    <!-- HEADER -->
     <header class="flex justify-between items-center fixed z-50 bg-black/60 h-20 w-full px-10">
         <img class="w-20" src="assets/images/logo-barbearia.png" alt="Logo Barbearia">
         <span id="openMenu" class="material-symbols-outlined text-white cursor-pointer select-none">menu</span>
 
     </header>
 
-    <div id="overlay" class="fixed inset-0 bg-black/60 opacity-0 pointer-events-none transition-opacity duration-300 z-40">
+    <!-- MENU CELULAR -->
+    <div
+    id="overlay"
+    class="fixed inset-0 bg-black/70 opacity-0 pointer-events-none
+            transition-opacity duration-300 z-40">
     </div>
 
     <nav
-        id="mobileMenu"
-        class="fixed top-0 left-0 h-screen w-80 bg-black z-50
-                -translate-x-full transition-transform duration-300 ease-in-out
-                flex flex-col px-8 py-10">
+    id="mobileMenu"
+    class="fixed top-0 left-0 h-screen w-80 bg-black z-50
+            -translate-x-full transition-transform duration-300 ease-in-out
+            flex flex-col px-8 py-10">
 
-        <div class="flex justify-between items-center mb-16">
-            <img class="w-24" src="assets/images/logo-barbearia.png" alt="Logo Barbearia">
-            <button
-            id="closeMenu"
-            class="text-white text-2xl hover:opacity-60 transition">
-            ✕
-            </button>
+    <div class="flex justify-between items-center mb-14">
+        <img
+        src="assets/images/logo-barbearia.png"
+        class="w-24"
+        alt="Barbearia Prime">
+
+        <button
+        id="closeMenu"
+        class="text-white text-2xl hover:opacity-60 transition">
+        ✕
+        </button>
+    </div>
+
+    <div class="flex flex-col gap-8">
+
+        <a href="#inicio"
+        class="group font-title text-4xl uppercase text-white tracking-wide reveal-left">
+        <span class="block h-[2px] w-0 bg-white mb-1
+                    transition-all duration-300 group-hover:w-10"></span>
+        Início
+        </a>
+
+        <a href="#servicos"
+        class="group font-title text-4xl uppercase text-white tracking-wide reveal-left">
+        <span class="block h-[2px] w-0 bg-white mb-1
+                    transition-all duration-300 group-hover:w-10"></span>
+        Serviços
+        </a>
+
+        <a href="#sobre"
+        class="group font-title text-4xl uppercase text-white tracking-wide reveal-left">
+        <span class="block h-[2px] w-0 bg-white mb-1
+                    transition-all duration-300 group-hover:w-10"></span>
+        Sobre
+        </a>
+
+        <a href="#avaliacoes"
+        class="group font-title text-4xl uppercase text-white tracking-wide reveal-left">
+        <span class="block h-[2px] w-0 bg-white mb-1
+                    transition-all duration-300 group-hover:w-10"></span>
+        Avaliações
+        </a>
+
+        <a href="#espaco"
+        class="group font-title text-4xl uppercase text-white tracking-wide reveal-left">
+        <span class="block h-[2px] w-0 bg-white mb-1
+                    transition-all duration-300 group-hover:w-10"></span>
+        Nosso espaço
+        </a>
+
+    </div>
+
+    <div class="mt-auto pt-10 border-t border-white/10">
+
+        <div class="space-y-4 mb-6">
+        <p class="font-body text-sm text-gray-400">
+            📍 Rua Exemplo, 123 — Centro
+        </p>
+
+        <p class="font-body text-sm text-gray-400">
+            📞 (11) 99999-9999
+        </p>
         </div>
 
-        <div class="flex flex-col gap-8">
+        <a
+        href="https://wa.me/5511999999999"
+        target="_blank"
+        class="block text-center
+                border border-white px-5 py-3
+                text-white uppercase tracking-widest text-sm
+                hover:bg-white hover:text-black transition">
+        Agendar horário
+        </a>
 
-            <a
-            href="#servicos"
-            class="group font-title text-4xl uppercase text-white tracking-wide transition">
-            <span class="block h-[2px] w-0 bg-white mb-2 transition-all duration-300 group-hover:w-10"></span>
-            Serviços
-            </a>
+    </div>
+    </nav>
 
-            <a
-            href="#sobre"
-            class="group font-title text-4xl uppercase text-white tracking-wide transition">
-            <span class="block h-[2px] w-0 bg-white mb-2 transition-all duration-300 group-hover:w-10"></span>
-            Sobre
-            </a>
-
-            <a
-            href="#contato"
-            class="group font-title text-4xl uppercase text-white tracking-wide transition">
-            <span class="block h-[2px] w-0 bg-white mb-2 transition-all duration-300 group-hover:w-10"></span>
-            Contato
-            </a>
-
-        </div>
-
-        <div class="mt-auto pt-10 border-t border-white/10">
-
-            <p class="font-body text-sm text-gray-400 mb-4">
-            Corte • Barba • Estilo
-            </p>
-
-            <a
-            href="#agendamento"
-            class="inline-block font-body text-sm uppercase tracking-widest
-                    border border-white px-5 py-3 text-white
-                    hover:bg-white hover:text-black transition">
-            Agendar horário
-            </a>
-
-        </div>
-        </nav>
 
     <main>
+        
+        <!-- SEÇÃO INICIAL -->
         <section class="relative w-screen h-screen overflow-hidden">
 
             <div id="slides" class="absolute inset-0">
@@ -123,6 +158,8 @@
                 </div>
             </div>
         </section>
+        
+        <!-- SEÇÃO SERVIÇOS -->
         <section id="servicos" class="bg-black py-32">
 
         <div class="max-w-7xl mx-auto px-10">
@@ -139,7 +176,8 @@
 
             <div class="grid md:grid-cols-3 gap-12">
 
-            <div class="group border border-white/10 overflow-hidden hover:border-white transition">
+            <div class="group border border-white/10 overflow-hidden hover:border-white transition reveal-zoom">
+
 
                 <div class="h-56 overflow-hidden">
                 <img
@@ -164,7 +202,8 @@
 
             </div>
 
-            <div class="group border border-white/10 overflow-hidden hover:border-white transition">
+            <div class="group border border-white/10 overflow-hidden hover:border-white transition reveal-zoom">
+
 
                 <div class="h-56 overflow-hidden">
                 <img
@@ -189,7 +228,8 @@
 
             </div>
 
-            <div class="group border border-white/10 overflow-hidden hover:border-white transition">
+            <div class="group border border-white/10 overflow-hidden hover:border-white transition reveal-zoom">
+
 
                 <div class="h-56 overflow-hidden">
                 <img
@@ -229,13 +269,226 @@
             </div>
 
         </div>
-
+        
         </section>
+        
+        <!-- SEÇÃO SOBRE NÓS -->
+        <section
+        class="relative h-[58vh] bg-fixed bg-center bg-cover"
+        style="background-image: url('assets/images/barbearia3.jpeg');">
+
+        <div class="absolute inset-0 bg-black/70"></div>
+
+        <div class="relative z-10 h-full flex flex-col items-center pt-10">
+            
+            <div class="max-w-7xl mx-auto px-10 reveal-left">
+            <span class="font-body text-xs text-gray-400 tracking-[0.35em] uppercase mb-4">Nossa essência</span>
+            <h2 class="font-title text-white text-7xl uppercase leading-none mb-6">
+                Mais que<br>
+                um <span class="text-[#F5C77A]">corte</span>
+            </h2>
+
+            <p class="font-body text-gray-200 mb-6">
+                        Aqui, cada detalhe é pensado para oferecer uma experiência completa.
+                        Do atendimento ao acabamento final, tudo é feito com precisão e cuidado.
+                    </p>
+
+                    <p class="font-body text-gray-200">
+                        Um ambiente criado para quem valoriza estilo, conforto e autenticidade.
+                    </p>
+            </div>
+        </div>
+        </section>
+        <section id="sobre" class="bg-black pt-5 pb-20 border-t border-white/10">
+            <div class="max-w-7xl mx-auto px-10 grid md:grid-cols-2 gap-20 items-center">
+                <div class="space-y-10 reveal-right">
+                <div>
+                    <h3 class="font-title text-3xl text-white uppercase mb-2">Atendimento personalizado</h3>
+                    <p class="font-body text-gray-400">Cada cliente é único. O corte acompanha seu estilo.</p>
+                </div>
+
+                <div>
+                    <h3 class="font-title text-3xl text-white uppercase mb-2">Profissionais experientes</h3>
+                    <p class="font-body text-gray-400">Equipe especializada e em constante evolução.</p>
+                </div>
+
+                <div>
+                    <h3 class="font-title text-3xl text-white uppercase mb-2">Produtos premium</h3>
+                    <p class="font-body text-gray-400">Qualidade que você sente no resultado.</p>
+                </div>
+                </div>
+            </div>
+            </section>
+
+        <!-- SEÇÃO NOSSO ESPAÇO -->
+        <section class="bg-black py-32 border-white/10">
+        <div class="max-w-7xl mx-auto px-10">
+
+            <div class="mb-16">
+            <span class="block font-body text-xs text-gray-400 tracking-[0.35em] uppercase mb-4">
+                Nosso espaço
+            </span>
+
+            <h2 class="font-title text-white text-6xl uppercase leading-none">
+                Ambiente
+            </h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+            <img src="assets/images/barbearia2.jpeg" class="w-full h-80 object-cover reveal">
+            <img src="assets/images/barbearia3.jpeg" class="w-full h-80 object-cover reveal">
+            <img src="assets/images/barbearia4.jpeg" class="w-full h-80 object-cover reveal">
+            </div>
+        </div>
+        </section>
+
+        <!-- SEÇÃO AVALIAÇÃO -->
+        <section class="bg-[#1F1F1F] py-32 border-white/10">
+        <div class="max-w-7xl mx-auto px-10">
+
+            <div class="mb-16">
+            <span class="block font-body text-xs text-gray-400 tracking-[0.35em] uppercase mb-4">
+                Avaliações
+            </span>
+
+            <h2 class="font-title text-white text-6xl uppercase leading-none">
+                Google<br><span class="text-[#F5C77A]">Maps</span>
+            </h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+            <div class="bg-white rounded-md border border-black/10 shadow-lg p-6 reveal">
+                <div class="flex items-center gap-4 mb-4">
+                <div class="w-10 h-10 rounded-full bg-gray-700"></div>
+                <div>
+                    <p class="font-body text-black text-sm">Lucas Andrade</p>
+                    <div class="text-[#ffe07c] text-sm">★★★★★</div>
+                </div>
+                </div>
+
+                <p class="font-body text-black text-sm">
+                Excelente atendimento, ambiente top e corte impecável. Recomendo demais.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-md border border-black/10 shadow-lg p-6 reveal">
+                <div class="flex items-center gap-4 mb-4">
+                <div class="w-10 h-10 rounded-full bg-gray-700"></div>
+                <div>
+                    <p class="font-body text-black text-sm">Rafael Costa</p>
+                    <div class="text-[#ffe07c] text-sm">★★★★★</div>
+                </div>
+                </div>
+
+                <p class="font-body text-black text-sm">
+                Melhor barbearia da região. Atendimento diferenciado.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-md border border-black/10 shadow-lg p-6 reveal">
+                <div class="flex items-center gap-4 mb-4">
+                <div class="w-10 h-10 rounded-full bg-gray-700"></div>
+                <div>
+                    <p class="font-body text-black text-sm">João Martins</p>
+                    <div class="text-[#ffe07c] text-sm">★★★★★</div>
+                </div>
+                </div>
+
+                <p class="font-body text-black text-sm">
+                Ambiente limpo, profissionais qualificados e ótimo preço.
+                </p>
+            </div>
+            <div>
+                <p class="font-body text-center text-gray-400">
+                    📍 Rua Exemplo, 123 — Centro
+                </p>
+                </div>
+
+                <!-- MAPA -->
+                <div class="w-full h-[200px] border border-white/10 overflow-hidden">
+                <iframe
+                    src="https://www.google.com/maps?q=São%20Paulo&output=embed"
+                    class="w-full h-full border-0"
+                    loading="lazy">
+                </iframe>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- SEÇÃO CTA FINAL-->
+        <section id="agendamento" class="bg-black py-40 border-white/10 text-center">
+        <h2 class="font-title text-white text-7xl uppercase leading-none mb-8">
+            Pronto para<br>
+            mudar o <span class="text-[#F5C77A]">visual?</span>
+        </h2>
+
+        <a
+            href="https://wa.me/5500000000000"
+            target="_blank"
+            class="inline-flex items-center gap-4
+                border border-white text-white
+                px-10 py-5 uppercase tracking-widest text-sm
+                hover:bg-white hover:text-black transition">
+            Agendar pelo WhatsApp
+            <span>→</span>
+        </a>
+        </section>
+        <footer class="bg-black border-t border-white/10 py-20">
+        <div class="max-w-7xl mx-auto px-10 grid md:grid-cols-3 gap-16">
+            <div>
+            <img
+                src="assets/images/logo-barbearia.png"
+                class="w-24 mb-6"
+                alt="Barbearia Prime">
+
+            <p class="font-body text-gray-400 max-w-xs">
+                Estilo, conforto e atendimento de qualidade em um ambiente pensado para você.
+            </p>
+            </div>
+
+            <div>
+            <h3 class="font-title text-white text-3xl uppercase mb-6">
+                Contato
+            </h3>
+
+            <ul class="space-y-4 font-body text-gray-400">
+                <li>📍 Rua Exemplo, 123 — Centro</li>
+                <li>📞 (11) 99999-9999</li>
+                <li>✉ contato@barbeariaprime.com</li>
+            </ul>
+            </div>
+
+            <div>
+            <h3 class="font-title text-white text-3xl uppercase mb-6">
+                Horários
+            </h3>
+
+            <ul class="space-y-4 font-body text-gray-400">
+                <li>Seg a Sex: 09h — 19h</li>
+                <li>Sábado: 09h — 17h</li>
+                <li>Domingo: Fechado</li>
+            </ul>
+            </div>
+
+        </div>
+
+        <div class="mt-16 border-t border-white/10 pt-6 text-center">
+            <p class="font-body text-gray-500 text-sm">
+            © 2026 Barbearia Prime — Todos os direitos reservados
+            </p>
+        </div>
+        </footer>
+
+
+
 
 
 
     </main>
     
+    <script src="assets/animacoes.js"></script>
     <script src="assets/script.js"></script>
     <script src="assets/scriptMenu.js"></script>
 </body>

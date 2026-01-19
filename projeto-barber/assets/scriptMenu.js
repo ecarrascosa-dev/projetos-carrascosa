@@ -3,17 +3,25 @@ const closeBtn = document.getElementById('closeMenu')
 const menu = document.getElementById('mobileMenu')
 const overlay = document.getElementById('overlay')
 
-openBtn.addEventListener('click', () => {
+function openMenu() {
   menu.classList.remove('-translate-x-full')
   overlay.classList.remove('opacity-0', 'pointer-events-none')
-})
 
-closeBtn.addEventListener('click', () => {
+  // anima links em cascata
+  menu.querySelectorAll('.reveal-left').forEach((el, i) => {
+    el.classList.remove('active') // reset
+    el.style.transitionDelay = `${i * 0.08}s`
+    setTimeout(() => {
+      el.classList.add('active')
+    }, 50)
+  })
+}
+
+function closeMenu() {
   menu.classList.add('-translate-x-full')
   overlay.classList.add('opacity-0', 'pointer-events-none')
-})
+}
 
-overlay.addEventListener('click', () => {
-  menu.classList.add('-translate-x-full')
-  overlay.classList.add('opacity-0', 'pointer-events-none')
-})
+openBtn.addEventListener('click', openMenu)
+closeBtn.addEventListener('click', closeMenu)
+overlay.addEventListener('click', closeMenu)
