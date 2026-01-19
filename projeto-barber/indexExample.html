@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barbearia Prime</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: '#C9A24D',
+            dark: '#0F0F0F',
+            dark2: '#1C1C1C',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-dark text-white">
+
+  <!-- HERO -->
+  <section
+    class="relative min-h-screen flex items-center"
+    style="background-image: url('https://images.unsplash.com/photo-1599351431202-1e0f0137899a'); background-size: cover; background-position: center;"
+  >
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/70"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-8">
+      <h1
+        class="text-4xl md:text-6xl font-bold leading-tight"
+        data-aos="fade-right"
+      >
+        Estilo, atitude<br />
+        e <span class="text-gold">precisão</span>
+      </h1>
+
+      <p
+        class="text-gray-300 mt-6 max-w-xl"
+        data-aos="fade-right"
+        data-aos-delay="200"
+      >
+        Uma experiência premium em cortes masculinos e cuidados com a barba.
+      </p>
+
+      <button
+        class="mt-8 bg-gold text-dark px-10 py-4 font-semibold uppercase tracking-wide hover:scale-105 transition"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
+        Agendar Horário
+      </button>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="py-24 px-8 bg-dark2">
+    <div class="max-w-7xl mx-auto">
+      <h2
+        class="text-3xl font-bold text-center mb-16"
+        data-aos="fade-up"
+      >
+        Nossos <span class="text-gold">Serviços</span>
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-10">
+        <!-- Card -->
+        <div
+          class="bg-dark border border-gray-800 overflow-hidden group"
+          data-aos="zoom-in"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1621605810052-8090f8a7b5a1"
+            class="h-56 w-full object-cover group-hover:scale-110 transition duration-500"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Corte Masculino</h3>
+            <p class="text-gray-400 text-sm">
+              Cortes modernos e clássicos com acabamento perfeito.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-dark border border-gray-800 overflow-hidden group"
+          data-aos="zoom-in"
+          data-aos-delay="150"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1"
+            class="h-56 w-full object-cover group-hover:scale-110 transition duration-500"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Barba Premium</h3>
+            <p class="text-gray-400 text-sm">
+              Modelagem, hidratação e toalha quente.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-dark border border-gray-800 overflow-hidden group"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186"
+            class="h-56 w-full object-cover group-hover:scale-110 transition duration-500"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Combo Completo</h3>
+            <p class="text-gray-400 text-sm">
+              Corte + barba com condições especiais.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="py-24 px-8">
+    <div
+      class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center"
+    >
+      <img
+        src="https://images.unsplash.com/photo-1622288432450-277d0fef5ed6"
+        class="rounded-lg"
+        data-aos="fade-right"
+      />
+
+      <div data-aos="fade-left">
+        <h2 class="text-3xl font-bold mb-6">
+          Tradição & <span class="text-gold">Modernidade</span>
+        </h2>
+        <p class="text-gray-400 leading-relaxed">
+          Nossa barbearia une técnicas tradicionais com tendências modernas,
+          oferecendo uma experiência única em um ambiente sofisticado.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-dark2 py-24 text-center">
+    <h2 class="text-3xl font-bold" data-aos="fade-up">
+      Eleve seu <span class="text-gold">estilo</span>
+    </h2>
+    <p class="text-gray-400 mt-4" data-aos="fade-up" data-aos-delay="150">
+      Agende agora e viva a experiência Prime.
+    </p>
+
+    <button
+      class="mt-8 bg-gold text-dark px-12 py-4 font-semibold uppercase hover:scale-105 transition"
+      data-aos="zoom-in"
+      data-aos-delay="300"
+    >
+      WhatsApp
+    </button>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black py-6 text-center text-gray-500 text-sm">
+    © 2026 Barbearia Prime — Projeto para Portfólio
+  </footer>
+
+  <!-- AOS SCRIPT -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 900,
+      once: true,
+    });
+  </script>
+
+</body>
+</html>

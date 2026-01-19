@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Barbearia</title>
+    <link rel="stylesheet" href="assets/style.css">
+    
+    <!--CDNs-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <!--Google-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+
+</head>
+<body class="h-[2000px] font-body">
+    <header class="flex justify-between items-center fixed z-50 bg-black/60 h-20 w-full px-10">
+        <img class="w-20" src="assets/images/logo-barbearia.png" alt="Logo Barbearia">
+        <span id="openMenu" class="material-symbols-outlined text-white cursor-pointer select-none">menu</span>
+
+    </header>
+
+    <div id="overlay" class="fixed inset-0 bg-black/60 opacity-0 pointer-events-none transition-opacity duration-300 z-40">
+    </div>
+
+    <nav id="mobileMenu" class="fixed top-0 left-0 h-screen w-72 bg-black z-50 -translate-x-full transition-transform duration-300 ease-in-out flex flex-col px-6 py-8">
+        <div class="flex justify-between items-center mb-10">
+            <img class="w-20" src="assets/images/logo-barbearia.png" alt="Logo Barbearia">
+            <button id="closeMenu" class="self-end text-2xl text-white mb-8">
+                ✕
+            </button>
+        </div>
+
+        <a href="#servicos" class="text-lg text-white mb-6 hover:opacity-70 transition">
+            Serviços
+        </a>
+        <a href="#sobre" class="text-lg text-white mb-6 hover:opacity-70 transition">
+            Sobre
+        </a>
+        <a href="#contato" class="text-lg text-white hover:opacity-70 transition">
+            Contato
+        </a>
+    </nav>
+
+    <main>
+        <section class="relative w-screen h-screen overflow-hidden">
+
+    <div id="slides" class="absolute inset-0">
+        <div class="slide active bg-[url(/assets/images/barbearia2.jpeg)]"></div>
+        <div class="slide bg-[url(/assets/images/barbearia3.jpeg)]"></div>
+        <div class="slide bg-[url(/assets/images/barbearia4.jpeg)]"></div>
+    </div>
+
+    <div class="absolute inset-0 bg-black/60 z-10"></div>
+    <div class="relative z-20 h-full flex items-center px-10 max-w-7xl mx-auto">
+        <div>
+            <span
+                class="block font-body text-xs text-gray-300 tracking-[0.35em] uppercase mb-4 opacity-0 translate-y-6 transition-all duration-700 delay-100">
+                Barbearia urbana
+            </span>
+        <h1
+            id="hero-title"
+            class="font-title text-white text-7xl md:text-8xl uppercase leading-none mb-6
+                opacity-0 translate-y-6 transition-all duration-700 delay-200">
+            Corte.<br>
+            <span class="text-[#F5C77A]">Barba.</span><br>
+            Atitude.
+        </h1>
+        <p
+            id="hero-subtitle"
+            class="font-body text-gray-300 max-w-md mb-10
+                opacity-0 translate-y-6 transition-all duration-700 delay-300">
+            Um espaço criado para quem valoriza estilo, conforto e um atendimento de verdade.
+        </p>
+        <a
+            href="#agendamento"
+            class="inline-flex items-center gap-4
+                border border-white text-white
+                px-6 py-3 uppercase text-sm tracking-widest
+                hover:bg-white hover:text-black
+                transition"
+>
+            Agendar horário
+            <span class="text-lg">→</span>
+        </a>
+
+        </div>
+    </div>
+
+</section>
+
+    </main>
+    
+    <script src="assets/script.js"></script>
+    <script src="assets/scriptMenu.js"></script>
+</body>
+</html>
