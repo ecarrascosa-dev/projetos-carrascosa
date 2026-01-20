@@ -1,194 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eduardo Carrascosa — Criação de Sites</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#f97316', // Laranja suave
-          },
-        },
-      },
-    }
-  </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfólio Carrascosa</title>
+<link rel="stylesheet" href="style/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-white text-gray-800 font-sans">
+<body class="bg-white text-gray-800 font-inter">
 
-  <!-- Navbar -->
-  <header class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
-    <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
-      <h1 class="text-xl font-bold text-gray-900">Eduardo Carrascosa</h1>
-      <nav class="space-x-6 hidden md:flex">
-        <a href="#sobre" class="hover:text-primary transition">Sobre mim</a>
-        <a href="#beneficios" class="hover:text-primary transition">Benefícios</a>
-        <a href="#portfolio" class="hover:text-primary transition">Portfólio</a>
-        <a href="#contato" class="hover:text-primary transition">Contato</a>
-      </nav>
-      <a href="#contato" class="md:hidden bg-primary text-white px-4 py-2 rounded-lg text-sm hover:bg-orange-600 transition">Contato</a>
-    </div>
-  </header>
+<div id="main-one" class="px-[5%] sm:px-[10%]">
 
-  <!-- Hero -->
-  <section class="pt-32 pb-24 px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
-    <div class="flex-1">
-      <h2 class="text-4xl md:text-5xl font-bold mb-4 leading-tight text-gray-900">
-        Sua marca merece mais <br class="hidden md:block">do que um link.
-      </h2>
-      <p class="text-gray-600 mb-6 text-lg">
-        Transformo ideias em sites modernos, rápidos e que realmente geram resultados para o seu negócio.
-      </p>
-      <a href="#contato" class="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-600 transition">
-        Fale comigo no WhatsApp
-      </a>
-    </div>
-    <div class="flex-1">
-      <img src="https://via.placeholder.com/400x400" alt="Foto de Eduardo Carrascosa"
-        class="rounded-2xl shadow-lg w-full object-cover">
-    </div>
-  </section>
-
-  <!-- Sobre mim -->
-  <section id="sobre" class="py-24 bg-gray-50 px-6">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6 text-gray-900">Quem sou eu</h2>
-      <p class="text-lg text-gray-600 leading-relaxed mb-6">
-        Sou o <strong>Eduardo Carrascosa</strong>, desenvolvedor front-end apaixonado por criar sites simples e eficientes para negócios locais.
-        Acredito que um bom site deve ser bonito, leve e gerar resultados reais — como mais ligações, pedidos e visitas.
-      </p>
-      <ul class="text-gray-700 text-left md:text-center space-y-2">
-        <li>✅ Experiência com HTML, CSS, JavaScript e Tailwind</li>
-        <li>✅ Design moderno e adaptável a celulares</li>
-        <li>✅ Entrego sites completos e prontos para uso</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Benefícios -->
-  <section id="beneficios" class="py-24 px-6">
-    <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-10 text-gray-900">Por que seu negócio precisa de um site?</h2>
-      <div class="grid md:grid-cols-3 gap-10">
-        <div class="p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition bg-white">
-          <h3 class="text-xl font-semibold mb-3 text-primary">Mais credibilidade</h3>
-          <p class="text-gray-600">Um site profissional mostra que sua empresa é séria e confiável — algo que redes sociais sozinhas não passam.</p>
+    <!-- HEADER -->
+    <header class="flex justify-center py-4">
+        <div class="flex justify-between items-center shadow-md px-4 py-3 rounded-xl w-full max-w-7xl bg-white">
+            <h1 class="font-poppins text-xl font-bold text-gray-900">Eduardo Carrascosa</h1>
+            <nav>
+                <ul class="hidden sm:flex gap-6">
+                    <li><a href="#sobre" class="hover:text-orange-600 transition font-inter font-medium">Sobre</a></li>
+                    <li><a href="#beneficios" class="hover:text-orange-600 transition font-inter font-medium">Benefícios</a></li>
+                    <li><a href="#portfolio" class="hover:text-orange-600 transition font-inter font-medium">Portfólio</a></li>
+                    <li><a href="#contato" class="hover:text-orange-600 transition font-inter font-medium">Contato</a></li>
+                </ul>
+                <a href="#" class="sm:hidden bg-orange-500 text-white py-2 px-4 rounded-md hover:bg-orange-600 transition">Contato</a>
+            </nav>
         </div>
-        <div class="p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition bg-white">
-          <h3 class="text-xl font-semibold mb-3 text-primary">Mais clientes</h3>
-          <p class="text-gray-600">Com um site otimizado, pessoas te encontram facilmente no Google e entram em contato direto.</p>
-        </div>
-        <div class="p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition bg-white">
-          <h3 class="text-xl font-semibold mb-3 text-primary">Mais controle</h3>
-          <p class="text-gray-600">Você tem total controle sobre o visual, conteúdo e resultados — sem depender de algoritmos.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Portfólio -->
-  <section id="portfolio" class="py-24 bg-gray-50 px-6">
-    <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-10 text-gray-900">Alguns dos meus projetos</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
-          <img src="https://via.placeholder.com/400x250" alt="Projeto 1" class="w-full">
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2 text-primary">Site de Pizzaria</h3>
-            <p class="text-gray-600 text-sm">Layout atraente e fácil de usar, com menu online e botão direto para pedidos.</p>
-          </div>
-        </div>
-        <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
-          <img src="https://via.placeholder.com/400x250" alt="Projeto 2" class="w-full">
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2 text-primary">Site de Barbearia</h3>
-            <p class="text-gray-600 text-sm">Site estiloso com agendamento online e foco na identidade visual do negócio.</p>
-          </div>
-        </div>
-        <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
-          <img src="https://via.placeholder.com/400x250" alt="Projeto 3" class="w-full">
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2 text-primary">Site de Loja Local</h3>
-            <p class="text-gray-600 text-sm">Página simples e direta com produtos, horários e contato via WhatsApp.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contato -->
-  <section id="contato" class="py-24 px-6 text-center">
-    <h2 class="text-3xl font-bold mb-4 text-gray-900">Vamos criar seu site?</h2>
-    <p class="text-gray-600 mb-8">Entre em contato comigo e vamos transformar seu negócio com um site de verdade.</p>
-    <a href="https://wa.me/5511999999999" target="_blank" class="bg-primary text-white px-8 py-4 rounded-lg font-medium hover:bg-orange-600 transition text-lg">
-      Fale comigo no WhatsApp
-    </a>
-  </section>
-
-  <!-- Rodapé -->
-  <footer class="py-6 bg-gray-100 text-center text-gray-500 text-sm">
-    © 2025 Eduardo Carrascosa — Todos os direitos reservados.
-  </footer>
-
-
-  <section id="projects" class="py-12 bg-gray-50">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="text-3xl font-bold text-gray-900 mb-8 font-[inter]">Meus Projetos</h2>
-
-    <!-- Card do projeto -->
-    <div class="grid sm:grid-cols-2 gap-6">
-      <div class="relative group overflow-hidden rounded-2xl shadow-md">
-        <img src="https://via.placeholder.com/600x400" alt="Projeto" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-        <div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-          <button class="text-white font-semibold bg-orange-600 px-6 py-2 rounded-xl">Ver mais</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Popup (modal) -->
-  <div id="teste" class="fixed inset-0 bg-black/60 flex items-center justify-center z-50 ">
-    <div class="bg-white rounded-2xl shadow-lg max-w-3xl w-11/12 p-8 relative animate-in fade-in duration-300">
-      <!-- Botão fechar -->
-      <button class="absolute top-4 right-4 text-gray-400 hover:text-gray-600">
-        <i class="fa-solid fa-xmark text-xl"></i>
-      </button>
-
-      <!-- Conteúdo -->
-      <div class="grid md:grid-cols-2 gap-6">
-        <img src="https://via.placeholder.com/600x400" alt="Projeto" class="rounded-xl shadow-sm object-cover">
-
-        <div>
-          <h3 class="text-2xl font-[poppins] font-semibold text-gray-800 mb-2">Landing Page para Barbearia</h3>
-          <p class="text-gray-600 font-[inter] text-sm mb-4">
-            Site moderno e otimizado para atrair novos clientes, com foco em design responsivo e carregamento rápido.
-          </p>
-
-          <div class="mb-4">
-            <h4 class="font-semibold text-gray-800 mb-2 text-sm">Tecnologias usadas:</h4>
-            <div class="flex flex-wrap gap-2 text-sm">
-              <span class="bg-orange-100 text-orange-600 px-3 py-1 rounded-lg">HTML</span>
-              <span class="bg-orange-100 text-orange-600 px-3 py-1 rounded-lg">CSS</span>
-              <span class="bg-orange-100 text-orange-600 px-3 py-1 rounded-lg">Tailwind</span>
+    <!-- WELCOME -->
+    <section id="welcome" class="flex justify-center my-10">
+        <div class="flex flex-col lg:grid lg:grid-cols-[2fr_1fr] gap-6 shadow-lg p-4 lg:p-8 rounded-xl max-w-7xl bg-white">
+            <div class="flex flex-col justify-center">
+                <h1 class="font-poppins font-bold text-3xl lg:text-5xl mb-4">Sua marca merece mais do que um <span class="text-orange-600">link.</span></h1>
+                <p class="font-inter text-gray-700 mb-6 lg:text-xl">Transformo ideias em sites modernos, rápidos e que realmente geram resultados para o seu negócio.</p>
+                <a href="https://wa.me/5511974485503" target="_blank" class="bg-orange-500 text-white px-5 py-3 rounded-lg font-poppins hover:bg-orange-600 transition w-fit">Fale comigo no WhatsApp</a>
             </div>
-          </div>
-
-          <div class="flex items-center gap-4">
-            <a href="#" target="_blank" class="flex items-center gap-2 text-gray-700 hover:text-orange-600 font-medium">
-              <i class="fa-brands fa-github text-lg"></i> GitHub
-            </a>
-            <a href="#" target="_blank" class="flex items-center gap-2 text-gray-700 hover:text-orange-600 font-medium">
-              <i class="fa-solid fa-globe text-lg"></i> Ver site
-            </a>
-          </div>
+            <div class="flex justify-center items-center">
+                <img src="assets/imgs/homem.png" class="hidden lg:block lg:max-w-[400px] rounded-xl shadow-md hover:shadow-lg transition" alt="">
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-</body>
+    </section>
 
+    <!-- BENEFÍCIOS -->
+    <section id="beneficios" class="my-12 lg:grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
+        <div class="flex flex-col justify-center">
+            <h2 class="font-bold text-2xl lg:text-4xl mb-4">Por que escolher meu serviço de criação de sites?</h2>
+            <p class="text-gray-700 lg:text-xl mb-6">Seja encontrado, lembrado e confiável. Meus sites fazem seu negócio se destacar e atrair mais clientes.</p>
+            <div class="hidden lg:block bg-[url(assets/imgs/beneficios.png)] bg-contain bg-no-repeat bg-center h-60 rounded-xl shadow-lg"></div>
+        </div>
+        <div class="grid grid-cols-1 gap-4">
+            <div class="p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition bg-white">
+                <h3 class="text-orange-600 font-semibold text-xl mb-2">🌐 Mais visibilidade</h3>
+                <p class="text-gray-700">Clientes locais encontram você no Google e no Maps.</p>
+            </div>
+            <div class="p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition bg-white">
+                <h3 class="text-orange-600 font-semibold text-xl mb-2">⚡ Sites rápidos</h3>
+                <p class="text-gray-700">Carregamento leve e otimizado para celular.</p>
+            </div>
+            <div class="p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition bg-white">
+                <h3 class="text-orange-600 font-semibold text-xl mb-2">🎨 Design que destaca</h3>
+                <p class="text-gray-700">Visual profissional e moderno que reforça sua marca.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE MIM -->
+    <section id="sobre" class="py-12 bg-gray-50">
+        <h2 class="text-center font-bold text-3xl lg:text-4xl mb-6">Quem sou eu?</h2>
+        <p class="text-center text-gray-700 mb-6 lg:text-xl">Sou o <span class="text-orange-600 font-semibold">Eduardo Carrascosa</span>, desenvolvedor front-end apaixonado por criar sites simples e eficientes para negócios locais.</p>
+        <ul class="list-disc list-inside text-gray-700 lg:text-xl max-w-3xl mx-auto space-y-2">
+            <li>Experiência com HTML, CSS, JavaScript e Tailwind</li>
+            <li>Design moderno e adaptável a celulares</li>
+            <li>Entrego sites completos e prontos para uso</li>
+        </ul>
+    </section>
+
+    <!-- PORTFÓLIO -->
+    <section id="portfolio" class="py-12 max-w-7xl mx-auto px-6 lg:px-16">
+        <h2 class="text-center text-3xl lg:text-4xl font-bold mb-8">Meus projetos</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="rounded-2xl shadow-md hover:shadow-lg transition overflow-hidden bg-white">
+                <h3 class="text-center font-bold text-xl lg:text-2xl text-orange-600 p-4">CineMel</h3>
+                <div class="h-48 lg:h-64 bg-[url(assets/imgs/cinemel-bg.PNG)] bg-cover bg-center hover:scale-105 transition"></div>
+            </div>
+            <div class="rounded-2xl shadow-md hover:shadow-lg transition overflow-hidden bg-white">
+                <h3 class="text-center font-bold text-xl lg:text-2xl text-orange-600 p-4">Essência</h3>
+                <div class="h-48 lg:h-64 bg-[url(assets/imgs/essencia.PNG)] bg-cover bg-center hover:scale-105 transition"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="py-16 text-center bg-gray-50">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-4">Vamos criar seu site?</h2>
+        <p class="text-gray-700 mb-6 lg:text-xl">Entre em contato comigo e vamos transformar seu negócio com um site de verdade.</p>
+        <a href="https://wa.me/5511974485503" target="_blank" class="bg-orange-500 text-white px-8 py-4 rounded-lg font-medium hover:bg-orange-600 transition text-lg">
+            Fale comigo no WhatsApp
+        </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-6 w-full bg-white shadow-t text-center text-gray-500 text-sm">
+        © 2025 Eduardo Carrascosa — Todos os direitos reservados.
+    </footer>
+
+</div>
+<script src="https://kit.fontawesome.com/13c88f5cf0.js" crossorigin="anonymous"></script>
+<script src="js/pops.js" defer></script>
+</body>
 </html>
