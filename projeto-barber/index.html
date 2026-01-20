@@ -170,9 +170,9 @@
         <section class="relative w-screen h-screen overflow-hidden">
 
             <div id="slides" class="absolute inset-0">
-                <div class="slide active bg-[url(assets/images/barbearia2.jpeg)]"></div>
-                <div class="slide bg-[url(assets/images/barbearia3.jpeg)]"></div>
-                <div class="slide bg-[url(assets/images/barbearia4.jpeg)]"></div>
+                <div class="slide active bg-[url(assets/images/barbearia2.jpeg)] | lg:bg-[url(assets/images/barbearia11.jpg)]"></div>
+                <div class="slide bg-[url(assets/images/barbearia3.jpeg)] | lg:lg:bg-[url(assets/images/barbearia10.jpg)]"></div>
+                <div class="slide bg-[url(assets/images/barbearia4.jpeg)] | lg:lg:bg-[url(assets/images/barbearia9.jpg)]"></div>
             </div>
 
             <div class="absolute inset-0 bg-black/60 z-10"></div>
@@ -194,7 +194,7 @@
                 <p
                     id="hero-subtitle"
                     class="font-body text-gray-300 max-w-md mb-10
-                        opacity-0 translate-y-6 transition-all duration-700 delay-300">
+                        opacity-0 translate-y-6 transition-all duration-700 delay-300 | lg:text-xl">
                     Um espaço criado para quem valoriza estilo, conforto e um atendimento de verdade.
                 </p>
                 <a
@@ -226,10 +226,10 @@
             </h2>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-14">
 
-            <div class="group border border-white/10 overflow-hidden hover:border-white transition reveal-zoom">
 
+            <div class="group border border-white/10 overflow-hidden hover:border-white transition reveal-zoom | lg:hover:shadow-2xl">
 
                 <div class="h-56 overflow-hidden">
                 <img
@@ -325,51 +325,71 @@
         </section>
         
         <!-- SEÇÃO SOBRE NÓS -->
-        <section
-        class="relative h-[100vh] bg-fixed bg-center bg-cover"
-        style="background-image: url('assets/images/barbearia7.jpeg');">
+        <section id="sobre" class="relative overflow-hidden">
 
-        <div class="absolute inset-0 bg-black/70"></div>
+        <section id="parallax"
+        class="relative min-h-screen bg-left bg-cover md:bg-fixed">
 
-        <div class="relative z-10 h-full flex flex-col items-center pt-10">
-            
-            <div class="max-w-7xl mx-auto px-10 reveal-left">
-            <span class="font-body text-xs text-gray-400 tracking-[0.35em] uppercase mb-4">Nossa essência</span>
-            <h2 class="font-title text-white text-7xl uppercase leading-none mb-6">
+        <div class="absolute inset-0 bg-black/80"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-16 py-32">
+
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+
+            <div>
+                <span class="block font-body text-xs text-gray-400 tracking-[0.35em] uppercase mb-4">
+                Nossa essência
+                </span>
+
+                <h2 class="font-title text-white text-6xl md:text-7xl uppercase leading-none mb-8">
                 Mais que<br>
                 um <span class="text-[#F5C77A]">corte</span>
-            </h2>
+                </h2>
 
-            <p class="font-body text-gray-200 mb-6">
-                        Aqui, cada detalhe é pensado para oferecer uma experiência completa.
-                        Do atendimento ao acabamento final, tudo é feito com precisão e cuidado.
-                    </p>
+                <p class="font-body text-gray-200 mb-6 max-w-xl">
+                Aqui, cada detalhe é pensado para oferecer uma experiência completa.
+                Do atendimento ao acabamento final, tudo é feito com precisão e cuidado.
+                </p>
 
-                    <p class="font-body text-gray-200">
-                        Um ambiente criado para quem valoriza estilo, conforto e autenticidade.
-                    </p>
+                <p class="font-body text-gray-200 max-w-xl">
+                Um ambiente criado para quem valoriza estilo, conforto e autenticidade.
+                </p>
             </div>
-            <div class="max-w-7xl mx-auto px-10 grid md:grid-cols-2 gap-20 items-center pt-5">
-                <div class="space-y-5 reveal-right">
-                    <div>
-                        <h3 class="font-title text-3xl text-white uppercase mb-2">Atendimento personalizado</h3>
-                        <p class="font-body text-gray-400">Cada cliente é único. O corte acompanha seu estilo.</p>
-                    </div>
 
-                    <div>
-                        <h3 class="font-title text-3xl text-white uppercase mb-2">Profissionais experientes</h3>
-                        <p class="font-body text-gray-400">Equipe especializada e em constante evolução.</p>
-                    </div>
+            <div class="space-y-10">
+                <div>
+                <h3 class="font-title text-3xl text-white uppercase mb-2">
+                    Atendimento personalizado
+                </h3>
+                <p class="font-body text-gray-400">
+                    Cada cliente é único. O corte acompanha seu estilo.
+                </p>
+                </div>
 
-                    <div>
-                        <h3 class="font-title text-3xl text-white uppercase mb-2">Produtos premium</h3>
-                        <p class="font-body text-gray-400">Qualidade que você sente no resultado.</p>
-                    </div>
+                <div>
+                <h3 class="font-title text-3xl text-white uppercase mb-2">
+                    Profissionais experientes
+                </h3>
+                <p class="font-body text-gray-400">
+                    Equipe especializada e em constante evolução.
+                </p>
+                </div>
+
+                <div>
+                <h3 class="font-title text-3xl text-white uppercase mb-2">
+                    Produtos premium
+                </h3>
+                <p class="font-body text-gray-400">
+                    Qualidade que você sente no resultado.
+                </p>
                 </div>
             </div>
+
+            </div>
         </div>
-        
         </section>
+
+
 
         <!-- SEÇÃO NOSSO ESPAÇO -->
         <section class="bg-black py-12 border-white/10">
@@ -395,78 +415,76 @@
 
         <!-- SEÇÃO AVALIAÇÃO -->
         <section class="bg-[#1F1F1F] py-20 border-white/10">
-        <div class="max-w-7xl mx-auto px-10">
+            <div class="max-w-7xl mx-auto px-10">
 
-            <div class="mb-16">
-            <span class="block font-body text-xs text-gray-400 tracking-[0.35em] uppercase mb-4">
-                Avaliações
-            </span>
+                <div class="grid lg:grid-cols-3 gap-16 items-start">
 
-            <h2 class="font-title text-white text-6xl uppercase leading-none">
-                Google<br><span class="text-[#F5C77A]">Maps</span>
-            </h2>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-
-            <div class="bg-white rounded-md border border-black/10 shadow-lg p-6 reveal">
-                <div class="flex items-center gap-4 mb-4">
-                <div class="w-10 h-10 rounded-full bg-gray-700"></div>
+                <!-- TEXTO -->
                 <div>
-                    <p class="font-body text-black text-sm">Lucas Andrade</p>
-                    <div class="text-[#ffe07c] text-sm">★★★★★</div>
+                    <span class="block font-body text-xs text-gray-400 tracking-[0.35em] uppercase mb-4">
+                    Avaliações
+                    </span>
+
+                    <h2 class="font-title text-white text-6xl uppercase leading-none mb-6">
+                    Google<br><span class="text-[#F5C77A]">Maps</span>
+                    </h2>
+
+                    <p class="font-body text-gray-300 max-w-sm">
+                    Avaliações reais de clientes que confiam no nosso trabalho e recomendam a experiência.
+                    </p>
+                </div>
+
+                <!-- GRID DE AVALIAÇÕES -->
+                <div class="lg:col-span-2 grid sm:grid-cols-2 gap-8">
+
+                    <!-- CARD -->
+                    <div class="bg-white rounded-md border border-black/10 shadow-lg p-6 reveal">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-gray-700"></div>
+                        <div>
+                        <p class="font-body text-black text-sm">Lucas Andrade</p>
+                        <div class="text-[#fbbc04] text-sm">★★★★★</div>
+                        </div>
+                    </div>
+
+                    <p class="font-body text-black text-sm">
+                        Excelente atendimento, ambiente top e corte impecável. Recomendo demais.
+                    </p>
+                    </div>
+
+                    <div class="bg-white rounded-md border border-black/10 shadow-lg p-6 reveal">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-gray-700"></div>
+                        <div>
+                        <p class="font-body text-black text-sm">Rafael Costa</p>
+                        <div class="text-[#fbbc04] text-sm">★★★★★</div>
+                        </div>
+                    </div>
+
+                    <p class="font-body text-black text-sm">
+                        Melhor barbearia da região. Atendimento diferenciado.
+                    </p>
+                    </div>
+
+                    <div class="bg-white rounded-md border border-black/10 shadow-lg p-6 reveal">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-gray-700"></div>
+                        <div>
+                        <p class="font-body text-black text-sm">João Martins</p>
+                        <div class="text-[#fbbc04] text-sm">★★★★★</div>
+                        </div>
+                    </div>
+
+                    <p class="font-body text-black text-sm">
+                        Ambiente limpo, profissionais qualificados e ótimo preço.
+                    </p>
+                    </div>
+
                 </div>
                 </div>
 
-                <p class="font-body text-black text-sm">
-                Excelente atendimento, ambiente top e corte impecável. Recomendo demais.
-                </p>
             </div>
-
-            <div class="bg-white rounded-md border border-black/10 shadow-lg p-6 reveal">
-                <div class="flex items-center gap-4 mb-4">
-                <div class="w-10 h-10 rounded-full bg-gray-700"></div>
-                <div>
-                    <p class="font-body text-black text-sm">Rafael Costa</p>
-                    <div class="text-[#ffe07c] text-sm">★★★★★</div>
-                </div>
-                </div>
-
-                <p class="font-body text-black text-sm">
-                Melhor barbearia da região. Atendimento diferenciado.
-                </p>
-            </div>
-
-            <div class="bg-white rounded-md border border-black/10 shadow-lg p-6 reveal">
-                <div class="flex items-center gap-4 mb-4">
-                <div class="w-10 h-10 rounded-full bg-gray-700"></div>
-                <div>
-                    <p class="font-body text-black text-sm">João Martins</p>
-                    <div class="text-[#ffe07c] text-sm">★★★★★</div>
-                </div>
-                </div>
-
-                <p class="font-body text-black text-sm">
-                Ambiente limpo, profissionais qualificados e ótimo preço.
-                </p>
-            </div>
-            <div>
-                <p class="font-body text-center text-gray-400">
-                    📍 Rua Exemplo, 123 — Centro
-                </p>
-                </div>
-
-                <!-- MAPA -->
-                <div class="w-full h-[200px] border border-white/10 overflow-hidden">
-                <iframe
-                    src="https://www.google.com/maps?q=São%20Paulo&output=embed"
-                    class="w-full h-full border-0"
-                    loading="lazy">
-                </iframe>
-                </div>
-            </div>
-        </div>
-        </section>
+            </section>
 
         <!-- SEÇÃO CTA FINAL-->
         <section id="agendamento" class="bg-black py-10 border-white/10 text-center">
@@ -531,7 +549,21 @@
             </p>
         </div>
         </footer>
+<div>
+                <p class="font-body text-center text-gray-400">
+                    📍 Rua Exemplo, 123 — Centro
+                </p>
+                </div>
 
+                <!-- MAPA -->
+                <div class="w-full h-[200px] border border-white/10 overflow-hidden">
+                <iframe
+                    src="https://www.google.com/maps?q=São%20Paulo&output=embed"
+                    class="w-full h-full border-0"
+                    loading="lazy">
+                </iframe>
+                </div>
+            </div>
 
 
 
@@ -539,8 +571,9 @@
 
     </main>
     
-    <script src="assets/animacoes.js"></script>
-    <script src="assets/script.js"></script>
-    <script src="assets/scriptMenu.js"></script>
+    <script src="assets/js/scriptParallax.js"></script>
+    <script src="assets/js/animacoes.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/scriptMenu.js"></script>
 </body>
 </html>

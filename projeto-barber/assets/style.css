@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karantina:wght@300;400;700&display=swap');
 
-
 .slide {
   position: absolute;
   inset: 0;
@@ -66,4 +65,19 @@ font-family: 'Inter', sans-serif;
 .reveal-zoom.active {
   opacity: 1;
   transform: scale(1);
+}
+
+/* parallax */
+
+
+@media screen and (max-width: 600px) {
+    #parallax {
+      background-image: url('images/barbearia7.jpeg');
+  }
+}
+
+@media screen and (min-width: 768px) {
+    #parallax {
+    background-image: url('images/barbearia.jpeg');
+  }
 }
