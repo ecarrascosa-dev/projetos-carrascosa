@@ -30,7 +30,7 @@
   </style>
 </head>
 <body>
-  <header id="header" class="z-50 fixed top-0 left-0 w-full h-36 bg-black/65">
+  <header id="header" class="z-50 fixed top-0 left-0 w-full h-30 bg-black/65">
     <div class="flex items-center justify-around h-8 border-b border-support text-segundary text-sm">
         <div class="flex items-center | lg:justify-normal">
             <p class="pr-10"><i class="fa-solid fa-location-dot pr-2"></i>Rua Alegria Nazaré, 353</p>
@@ -45,7 +45,7 @@
     </div>
     
     <div class="flex justify-around items-center px-6 text-white pt-3">
-        <img src="assets/imagens/logo-sem-fundo.png" class="w-24 brightness-150" alt="Logo do salão">
+        <img src="assets/imagens/logo-sem-fundo.png" class="w-20 brightness-150" alt="Logo do salão">
         <button id="menu-btn" class="lg:hidden text-segundary text-2xl z-50">
             <i class="fa-solid fa-bars"></i>
         </button>
@@ -65,66 +65,91 @@
   </header>
 
   <!-- MENU MOBILE -->
-<div id="mobile-menu"
-class="fixed inset-0 bg-black/80 backdrop-blur-sm text-segundary
-        transform -translate-y-full transition-all duration-500 ease-in-out
-        z-40 flex flex-col">
+    <div id="mobile-menu"
+    class="fixed inset-0 bg-black/80 backdrop-blur-sm text-segundary
+            transform -translate-y-full transition-all duration-500 ease-in-out
+            z-40 flex flex-col">
 
-<!-- Topo -->
-<div class="flex items-center justify-between px-6 py-5 border-b border-white/20">
-    <span class="font-cursive text-3xl text-primary">Belle Aura</span>
-    <button id="close-menu" class="text-3xl">
-    <i class="fa-solid fa-xmark"></i>
-    </button>
-</div>
-
-<!-- Links -->
-<nav class="flex-1 flex flex-col items-center justify-center gap-6">
-    <a href="#main-header" class="menu-link">Home</a>
-    <a href="#quem-somos" class="menu-link">Quem Somos</a>
-    <a href="#servicos" class="menu-link">Serviços</a>
-    <a href="#galeria" class="menu-link">Galeria</a>
-    <a href="#contato" class="menu-link">Contato</a>
-</nav>
-
-<!-- Mini Footer -->
-<div class="px-6 py-6 border-t border-white/20 text-center text-sm">
-    <p class="mb-2">
-    <i class="fa-solid fa-location-dot pr-2"></i>
-    Rua Alegria Nazaré, 353
-    </p>
-
-    <p class="mb-4">
-    <i class="fa-brands fa-whatsapp pr-2"></i>
-    (11) 97232-7893
-    </p>
-
-    <div class="flex justify-center gap-6 text-xl">
-    <i class="fa-brands fa-instagram hover:text-details duration-300"></i>
-    <i class="fa-brands fa-facebook hover:text-details duration-300"></i>
-    <i class="fa-brands fa-whatsapp hover:text-details duration-300"></i>
+    <!-- Topo -->
+    <div class="flex items-center justify-between px-6 py-5 border-b border-white/20">
+        <span class="font-cursive text-3xl text-primary">Belle Aura</span>
+        <button id="close-menu" class="text-3xl">
+        <i class="fa-solid fa-xmark"></i>
+        </button>
     </div>
 
-    <p class="mt-4 text-xs opacity-70">
-    © 2026 Belle Aura Studio
-    </p>
-</div>
-</div>
+    <!-- Links -->
+    <nav class="flex-1 flex flex-col items-center justify-center gap-7 text-xl">
+        <a href="#main-header" class="menu-link">Home</a>
+        <a href="#quem-somos" class="menu-link">Quem Somos</a>
+        <a href="#servicos" class="menu-link">Serviços</a>
+        <a href="#galeria" class="menu-link">Galeria</a>
+        <a href="#contato" class="menu-link">Contato</a>
+    </nav>
+
+    <!-- Mini Footer -->
+    <div class="px-6 py-6 border-t border-white/20 text-center text-sm">
+        <p class="mb-2">
+        <i class="fa-solid fa-location-dot pr-2"></i>
+        Rua Alegria Nazaré, 353
+        </p>
+
+        <p class="mb-4">
+        <i class="fa-brands fa-whatsapp pr-2"></i>
+        (11) 97232-7893
+        </p>
+
+        <div class="flex justify-center gap-6 text-xl">
+        <i class="fa-brands fa-instagram hover:text-details duration-300"></i>
+        <i class="fa-brands fa-facebook hover:text-details duration-300"></i>
+        <i class="fa-brands fa-whatsapp hover:text-details duration-300"></i>
+        </div>
+
+        <p class="mt-4 text-xs opacity-70">
+        © 2026 Belle Aura Studio
+        </p>
+    </div>
+    </div>
 
 
 
   <main>
-    <section id="main-header">
-      <div class="relative w-full h-[500px] py-[100px] bg-[url('assets/imagens/background-main-vertical.png')] bg-no-repeat bg-cover | lg:bg-[url(assets/imagens/background-main-horizontal.jpg)] lg:bg-center lg:h-[600px]">
-            <div class="absolute inset-0 bg-black/50"></div>
-            <div class="relative z-10 text-white p-5 pt-[100px] | lg:p-30 lg:pt-[90px]">
-                <p class="font-cursive text-4xl text-primary | lg:text-6xl">— Belle Aura Studio</p>
-                <h1 class="font-title w-10/12 text-segundary text-4xl | lg:text-7xl lg:w-8/12">O melhor salão de beleza para mulheres</h1>
-                <p class="font-parag text-primary pb-5 | lg:pt-4 lg:text-xl">Cabelo - Skincare - Unhas</p>
-                <a href="" class="border px-4 py-2 | lg:text-xl">Agende seu horário</a>
-            </div>
-      </div>
+    <section id="main-header" class="relative w-full h-[500px] lg:h-screen overflow-hidden">
+
+    <!-- SLIDES -->
+    <div class="absolute inset-0">
+        <img src="assets/imagens/background-main-horizontal.jpg"
+            class="hero-slide active" />
+        <img src="assets/imagens/front-view-smiley-woman-holding-smartphone.jpg"
+            class="hero-slide" />
+        <img src="assets/imagens/close-up-hairdresser-shop-instruments.jpg"
+            class="hero-slide" />
+    </div>
+
+    <!-- OVERLAY -->
+    <div class="absolute inset-0 bg-black/70 z-10"></div>
+
+    <!-- CONTEÚDO -->
+    <div class="relative z-20 text-white p-5 pt-[100px] lg:p-30 lg:pt-[190px]">
+        <p class="font-cursive text-4xl text-primary lg:text-6xl">
+        — Belle Aura Studio
+        </p>
+
+        <h1 class="font-title w-10/12 text-segundary text-4xl lg:text-7xl lg:w-8/12">
+        O melhor salão de beleza para mulheres
+        </h1>
+
+        <p class="font-parag text-primary pb-5 lg:pt-4 lg:text-xl">
+        Cabelo - Skincare - Unhas
+        </p>
+
+        <a href="#contato" class="border px-4 py-2 lg:text-xl">
+        Agende seu horário
+        </a>
+    </div>
+
     </section>
+
 
     <section id="quem-somos" class="grid grid-cols-1 justify-center items-center px-8 pt-10 | lg:grid-cols-2 lg:pt-20">
         <div class="inline-block relative m-auto pb-8 ">
@@ -185,34 +210,115 @@ class="fixed inset-0 bg-black/80 backdrop-blur-sm text-segundary
             </div>
         </div>
     </section>
-    <section id="depoimentos" class="py-20 px-6 bg-white">
-  <div class="max-w-6xl mx-auto text-center">
-    <h2 class="text-3xl font-title mb-12">O que nossas clientes dizem</h2>
+    <section id="depoimentos" class="py-20 bg-segundary overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6">
 
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="p-6 shadow-lg rounded-xl">
-        <p class="italic font-parag">
-          “Ambiente acolhedor, profissionais incríveis e resultado perfeito.”
-        </p>
-        <span class="block mt-4 font-semibold text-primary">— Mariana S.</span>
-      </div>
+    <h2 class="text-3xl font-title text-center mb-12">
+      Avaliações das nossas clientes
+    </h2>
 
-      <div class="p-6 shadow-lg rounded-xl">
-        <p class="italic font-parag">
-          “Me senti cuidada do início ao fim. Já virei cliente fiel!”
-        </p>
-        <span class="block mt-4 font-semibold text-primary">— Paula R.</span>
-      </div>
+    <!-- CARROSSEL -->
+    <div class="relative">
+      <div id="reviews-track"
+           class="flex gap-6 transition-transform duration-500 ease-in-out">
 
-      <div class="p-6 shadow-lg rounded-xl">
-        <p class="italic font-parag">
-          “O melhor salão que já fui. Atendimento impecável.”
-        </p>
-        <span class="block mt-4 font-semibold text-primary">— Camila T.</span>
+        <!-- CARD -->
+        <div class="review-card">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full bg-details flex items-center justify-center text-white font-bold">
+              M
+            </div>
+            <div class="text-left">
+              <p class="font-semibold">Mariana Silva</p>
+              <div class="text-yellow-400 text-sm">★★★★★</div>
+            </div>
+          </div>
+          <p class="font-parag italic text-sm">
+            Atendimento maravilhoso, ambiente aconchegante e resultado impecável.
+          </p>
+        </div>
+
+        <div class="review-card">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full bg-details flex items-center justify-center text-white font-bold">
+              P
+            </div>
+            <div class="text-left">
+              <p class="font-semibold">Paula Rocha</p>
+              <div class="text-yellow-400 text-sm">★★★★★</div>
+            </div>
+          </div>
+          <p class="font-parag italic text-sm">
+            Me senti cuidada do início ao fim. Já virei cliente fiel!
+          </p>
+        </div>
+
+        <div class="review-card">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full bg-details flex items-center justify-center text-white font-bold">
+              C
+            </div>
+            <div class="text-left">
+              <p class="font-semibold">Camila Torres</p>
+              <div class="text-yellow-400 text-sm">★★★★★</div>
+            </div>
+          </div>
+          <p class="font-parag italic text-sm">
+            Profissionais incríveis, recomendo demais.
+          </p>
+        </div>
+
+        <div class="review-card">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full bg-details flex items-center justify-center text-white font-bold">
+              M
+            </div>
+            <div class="text-left">
+              <p class="font-semibold">Mariana Silva</p>
+              <div class="text-yellow-400 text-sm">★★★★★</div>
+            </div>
+          </div>
+          <p class="font-parag italic text-sm">
+            Atendimento maravilhoso, ambiente aconchegante e resultado impecável.
+          </p>
+        </div>
+
+        <div class="review-card">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full bg-details flex items-center justify-center text-white font-bold">
+              P
+            </div>
+            <div class="text-left">
+              <p class="font-semibold">Paula Rocha</p>
+              <div class="text-yellow-400 text-sm">★★★★★</div>
+            </div>
+          </div>
+          <p class="font-parag italic text-sm">
+            Me senti cuidada do início ao fim. Já virei cliente fiel!
+          </p>
+        </div>
+
+        <div class="review-card">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full bg-details flex items-center justify-center text-white font-bold">
+              C
+            </div>
+            <div class="text-left">
+              <p class="font-semibold">Camila Torres</p>
+              <div class="text-yellow-400 text-sm">★★★★★</div>
+            </div>
+          </div>
+          <p class="font-parag italic text-sm">
+            Profissionais incríveis, recomendo demais.
+          </p>
+        </div>
+
       </div>
     </div>
+
   </div>
 </section>
+
 <section id="cta" class="py-20 bg-primary text-white text-center px-6">
   <h2 class="text-4xl font-title mb-4">
     Pronta para realçar sua beleza?

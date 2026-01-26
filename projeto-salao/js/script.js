@@ -40,3 +40,53 @@ mobileMenu.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', closeMobileMenu);
 });
 
+
+// SECTION MAIN
+
+const slides = document.querySelectorAll('.hero-slide');
+let currentSlide = 0;
+
+function changeSlide() {
+  slides[currentSlide].classList.remove('active');
+
+  currentSlide = (currentSlide + 1) % slides.length;
+
+  slides[currentSlide].classList.add('active');
+}
+
+setInterval(changeSlide, 5000); // troca a cada 5s
+
+// CARROSSEL AVALIAÇÃO
+const track = document.getElementById('reviews-track');
+const cards = document.querySelectorAll('.review-card');
+
+let index = 0;
+let startX = 0;
+let currentTranslate = 0;
+let isDragging = false;
+
+function updateSlide() {
+  const cardWidth = cards[0].offsetWidth + 24; // gap
+  track.style.transform = `translateX(-${index * cardWidth}px)`;
+}
+
+// TOUCH EVENTS
+track.addEventListener('touchstart', e => {
+  startX = e.touches[0].clientX;
+  isDragging = true;
+});
+
+track.addEventListener('touchend', e => {
+  if (!isDragging) return;
+  const endX = e.changedTouches[0].clientX;
+  const diff = startX - endX;
+
+  if (diff > 50 && index < cards.length - 1) index++;
+  if (diff < -50 && index > 0) index--;
+
+  updateSlide();
+  isDragging = false;
+});
+
+// Resize fix
+window.addEventListener('resize', updateSlide);
