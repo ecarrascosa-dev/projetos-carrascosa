@@ -13,7 +13,7 @@ window.addEventListener('scroll', () => {
   lastScroll = currentScroll;
 });
 
-// MENU CELULAR
+// MENU MOBILE
 const menuBtn = document.getElementById('menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
 const closeMenu = document.getElementById('close-menu');
@@ -21,13 +21,16 @@ const closeMenu = document.getElementById('close-menu');
 function openMenu() {
   mobileMenu.classList.remove('-translate-y-full');
   mobileMenu.classList.add('translate-y-0');
-  header.style.display = 'none';
+
+  // header só fica atrás, não some
+  header.classList.add('opacity-0', 'pointer-events-none');
 }
 
 function closeMobileMenu() {
   mobileMenu.classList.add('-translate-y-full');
-  header.style.display = 'block';
-  mobileMenu.style.display = 'none';
+  mobileMenu.classList.remove('translate-y-0');
+
+  header.classList.remove('opacity-0', 'pointer-events-none');
 }
 
 menuBtn.addEventListener('click', openMenu);
