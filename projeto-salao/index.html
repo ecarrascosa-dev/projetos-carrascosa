@@ -53,12 +53,12 @@
 
         <nav class="hidden | lg:flex">
             <ul class="flex">
-                <li class="text-xl px-5 text-segundary hover:text-details duration-300"><a href="">Home</a></li>
-                <li class="text-xl px-5 text-segundary hover:text-details duration-300"><a href="">Quem Somos</a></li>
-                <li class="text-xl px-5 text-segundary hover:text-details duration-300"><a href="">Serviços</a></li>
-                <li class="text-xl px-5 text-segundary hover:text-details duration-300"><a href="">Galeria</a></li>
-                <li class="text-xl px-5 text-segundary hover:text-details duration-300"><a href="">Notícias</a></li>
-                <li class="text-xl px-5 text-segundary hover:text-details duration-300"><a href="">Contatos</a></li>
+                <li class="text-xl px-5 text-segundary hover:text-details duration-300"><a href="#">Home</a></li>
+                <li class="text-xl px-5 text-segundary hover:text-details duration-300"><a href="#quem-somos">Quem Somos</a></li>
+                <li class="text-xl px-5 text-segundary hover:text-details duration-300"><a href="#servicos">Serviços</a></li>
+                <li class="text-xl px-5 text-segundary hover:text-details duration-300"><a href="#galeria">Galeria</a></li>
+                <li class="text-xl px-5 text-segundary hover:text-details duration-300"><a href="#profissionais">Nossa Equipe</a></li>
+                <li class="text-xl px-5 text-segundary hover:text-details duration-300"><a href="#contatos">Contatos</a></li>
             </ul>
         </nav>
     </div>
@@ -151,7 +151,8 @@
     </section>
 
 
-    <section id="quem-somos" class="grid grid-cols-1 justify-center items-center px-8 pt-10 | lg:grid-cols-2 lg:pt-20">
+    <section id="quem-somos" class="bg-segundary grid grid-cols-1 justify-center items-center px-8 pt-10 | lg:grid-cols-2 lg:py-20">
+        
         <div class="inline-block relative m-auto pb-8 ">
             <img src="assets/imagens/faixada-salao.png" class="w-80 rounded-xl relative z-10 | lg:w-[480px]">
             <img src="assets/imagens/interior-salao.png" class="hidden | lg:flex  lg:w-50 lg:rounded-xl lg:absolute lg:top-[30%] lg:right-[-10%] lg:z-10 lg:shadow-md">
@@ -176,9 +177,10 @@
                 “Cuidar de você é a parte mais bonita da nossa arte.”
             </p>
         </div>
+        
     </section>
 
-    <section id="servicos" class="relative bg-textMain mt-20 px-6 py-10">
+    <section id="servicos" class="relative bg-textMain px-6 py-10">
         <div class="text-white text-center relative pb-10 z-10">
             <h1 class="text-3xl font-title font-semibold | lg:text-4xl">
             Explore Nossos Serviços
@@ -210,163 +212,506 @@
             </div>
         </div>
     </section>
-    <section id="depoimentos" class="py-20 bg-segundary overflow-hidden">
-  <div class="max-w-7xl mx-auto px-6">
 
-    <h2 class="text-3xl font-title text-center mb-12">
-      Avaliações das nossas clientes
-    </h2>
+    <section id="galeria" class="py-24 bg-segundary">
+    <div class="max-w-7xl mx-auto px-6">
 
-    <!-- CARROSSEL -->
-    <div class="relative">
-      <div id="reviews-track"
-           class="flex gap-6 transition-transform duration-500 ease-in-out">
-
-        <!-- CARD -->
-        <div class="review-card">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 rounded-full bg-details flex items-center justify-center text-white font-bold">
-              M
-            </div>
-            <div class="text-left">
-              <p class="font-semibold">Mariana Silva</p>
-              <div class="text-yellow-400 text-sm">★★★★★</div>
-            </div>
-          </div>
-          <p class="font-parag italic text-sm">
-            Atendimento maravilhoso, ambiente aconchegante e resultado impecável.
-          </p>
+        <!-- TÍTULO -->
+        <div class="text-center mb-16">
+        <p class="font-cursive text-primary text-4xl mb-2">— Nosso Espaço</p>
+        <h2 class="text-3xl lg:text-4xl font-title text-textMain">
+            Galeria & Horários
+        </h2>
         </div>
 
-        <div class="review-card">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 rounded-full bg-details flex items-center justify-center text-white font-bold">
-              P
+        <div class="grid lg:grid-cols-3 gap-10 items-center">
+
+        <!-- GALERIA -->
+        <div class="grid grid-cols-2 gap-4 lg:col-span-2">
+            <img
+                src="assets/imagens/artista-feminina-aplicar-maquiagem-no-modelo_23-2148398671.jpg"
+                class="rounded-xl object-cover h-48 w-full hover:scale-105 transition duration-300"
+                alt="Cabelo feminino em salão">
+
+            <img
+                src="assets/imagens/healthy-beautiful-manicure-flat-lay.jpg"
+                class="rounded-xl object-cover h-48 w-full hover:scale-105 transition duration-300"
+                alt="Ambiente de salão de beleza">
+
+            <img
+                src="assets/imagens/interior-salao.png"
+                class="rounded-xl object-cover h-48 w-full hover:scale-105 transition duration-300"
+                alt="Maquiagem profissional">
+
+            <img
+                src="assets/imagens/mulher-styling-dela-cabelo-em-saloon_107420-12143.jpg"
+                class="rounded-xl object-cover h-48 w-full hover:scale-105 transition duration-300"
+                alt="Beleza e estética feminina">
             </div>
-            <div class="text-left">
-              <p class="font-semibold">Paula Rocha</p>
-              <div class="text-yellow-400 text-sm">★★★★★</div>
-            </div>
-          </div>
-          <p class="font-parag italic text-sm">
-            Me senti cuidada do início ao fim. Já virei cliente fiel!
-          </p>
+
+
+        <!-- HORÁRIOS -->
+        <div class="bg-segundary rounded-2xl shadow-lg p-8">
+            <h3 class="font-title text-2xl mb-6 text-center">
+            Horário de Funcionamento
+            </h3>
+
+            <ul class="space-y-4 font-parag text-sm">
+            <li class="flex justify-between border-b pb-2">
+                <span>Segunda-feira</span>
+               <span class="font-semibold text-red-500">Fechado</span>
+            </li>
+            <li class="flex justify-between border-b pb-2">
+                <span>Terça-feira</span>
+                <span class="font-semibold">09:00 – 19:00</span>
+            </li>
+            <li class="flex justify-between border-b pb-2">
+                <span>Quarta-feira</span>
+                <span class="font-semibold">09:00 – 19:00</span>
+            </li>
+            <li class="flex justify-between border-b pb-2">
+                <span>Quinta-feira</span>
+                <span class="font-semibold">09:00 – 19:00</span>
+            </li>
+            <li class="flex justify-between border-b pb-2">
+                <span>Sexta-feira</span>
+                <span class="font-semibold">09:00 – 19:00</span>
+            </li>
+            <li class="flex justify-between border-b pb-2">
+                <span>Sábado</span>
+                <span class="font-semibold">09:00 – 16:00</span>
+            </li>
+            <li class="flex justify-between">
+                <span>Domingo</span>
+                <span class="font-semibold text-red-500">Fechado</span>
+            </li>
+            </ul>
+
+            <p class="text-center text-xs mt-6 opacity-70">
+            Horários sujeitos a agendamento
+            </p>
         </div>
 
-        <div class="review-card">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 rounded-full bg-details flex items-center justify-center text-white font-bold">
-              C
-            </div>
-            <div class="text-left">
-              <p class="font-semibold">Camila Torres</p>
-              <div class="text-yellow-400 text-sm">★★★★★</div>
-            </div>
-          </div>
-          <p class="font-parag italic text-sm">
-            Profissionais incríveis, recomendo demais.
-          </p>
         </div>
-
-        <div class="review-card">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 rounded-full bg-details flex items-center justify-center text-white font-bold">
-              M
-            </div>
-            <div class="text-left">
-              <p class="font-semibold">Mariana Silva</p>
-              <div class="text-yellow-400 text-sm">★★★★★</div>
-            </div>
-          </div>
-          <p class="font-parag italic text-sm">
-            Atendimento maravilhoso, ambiente aconchegante e resultado impecável.
-          </p>
-        </div>
-
-        <div class="review-card">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 rounded-full bg-details flex items-center justify-center text-white font-bold">
-              P
-            </div>
-            <div class="text-left">
-              <p class="font-semibold">Paula Rocha</p>
-              <div class="text-yellow-400 text-sm">★★★★★</div>
-            </div>
-          </div>
-          <p class="font-parag italic text-sm">
-            Me senti cuidada do início ao fim. Já virei cliente fiel!
-          </p>
-        </div>
-
-        <div class="review-card">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 rounded-full bg-details flex items-center justify-center text-white font-bold">
-              C
-            </div>
-            <div class="text-left">
-              <p class="font-semibold">Camila Torres</p>
-              <div class="text-yellow-400 text-sm">★★★★★</div>
-            </div>
-          </div>
-          <p class="font-parag italic text-sm">
-            Profissionais incríveis, recomendo demais.
-          </p>
-        </div>
-
-      </div>
     </div>
+    </section>
 
-  </div>
-</section>
+    <section id="profissionais"
+    class="relative py-10 px-6 bg-textMain overflow-hidden">
 
-<section id="cta" class="py-20 bg-primary text-white text-center px-6">
-  <h2 class="text-4xl font-title mb-4">
-    Pronta para realçar sua beleza?
-  </h2>
+        <!-- DECORAÇÃO DE FUNDO -->
+        <span class="absolute -top-20 -left-20 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></span>
+        <span class="absolute bottom-0 right-0 w-72 h-72 bg-details/20 rounded-full blur-3xl"></span>
 
-  <p class="mb-8 font-parag text-lg">
-    Agende seu horário agora mesmo pelo WhatsApp
-  </p>
+        <div class="relative max-w-7xl mx-auto">
 
-  <a href="https://wa.me/5511972327893" target="_blank"
-     class="bg-white text-primary px-8 py-4 rounded-full font-semibold hover:opacity-90 duration-300">
-    Agendar agora
-  </a>
-</section>
-<footer class="bg-textMain text-segundary py-10 px-6">
-  <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
-    
-    <div>
-      <h3 class="font-title text-xl mb-2">Belle Aura Studio</h3>
-      <p class="font-parag text-sm">
-        Beleza, cuidado e autoestima em um só lugar.
-      </p>
+            <!-- TÍTULO -->
+            <div class="text-center mb-16">
+            <p class="font-cursive text-primary text-4xl mb-2">
+                — Nosso time
+            </p>
+            <h2 class="text-3xl lg:text-4xl font-title text-segundary">
+                Quem cuida de você
+            </h2>
+            </div>
+
+            <!-- GRID -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+            <!-- CARD -->
+            <div
+                class="bg-white/5 backdrop-blur-md border border-white/10
+                    rounded-2xl p-5 text-center hover:translate-y-[-4px]
+                    transition-all duration-300">
+
+                <img
+                src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?q=80&w=400"
+                class="w-32 h-32 mx-auto object-cover rounded-xl mb-4 shadow-lg"
+                />
+
+                <h3 class="font-title text-lg text-segundary">
+                Mariana Lopes
+                </h3>
+
+                <p class="font-parag text-sm text-segundary/70 mt-2">
+                Especialista em cortes femininos e coloração, focada em realçar a beleza natural.
+                </p>
+            </div>
+
+            <!-- CARD -->
+            <div
+                class="bg-white/5 backdrop-blur-md border border-white/10
+                    rounded-2xl p-5 text-center hover:translate-y-[-4px]
+                    transition-all duration-300">
+
+                <img
+                src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=400"
+                class="w-32 h-32 mx-auto object-cover rounded-xl mb-4 shadow-lg"
+                />
+
+                <h3 class="font-title text-lg text-segundary">
+                Camila Rocha
+                </h3>
+
+                <p class="font-parag text-sm text-segundary/70 mt-2">
+                Design de sobrancelhas e visagismo para harmonizar o rosto.
+                </p>
+            </div>
+
+            <!-- CARD -->
+            <div
+                class="bg-white/5 backdrop-blur-md border border-white/10
+                    rounded-2xl p-5 text-center hover:translate-y-[-4px]
+                    transition-all duration-300">
+
+                <img
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400"
+                class="w-32 h-32 mx-auto object-cover rounded-xl mb-4 shadow-lg"
+                />
+
+                <h3 class="font-title text-lg text-segundary">
+                Fernanda Alves
+                </h3>
+
+                <p class="font-parag text-sm text-segundary/70 mt-2">
+                Tratamentos capilares e recuperação profunda dos fios.
+                </p>
+            </div>
+
+            <!-- CARD -->
+            <div
+                class="bg-white/5 backdrop-blur-md border border-white/10
+                    rounded-2xl p-5 text-center hover:translate-y-[-4px]
+                    transition-all duration-300">
+
+                <img
+                src="https://images.unsplash.com/photo-1554151228-14d9def656e4?q=80&w=400"
+                class="w-32 h-32 mx-auto object-cover rounded-xl mb-4 shadow-lg"
+                />
+
+                <h3 class="font-title text-lg text-segundary">
+                Juliana Costa
+                </h3>
+
+                <p class="font-parag text-sm text-segundary/70 mt-2">
+                Manicure e pedicure com foco em cuidado e estética.
+                </p>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section id="depoimentos"
+  class="py-24 bg-gradient-to-b from-segundary via-white to-segundary overflow-hidden relative">
+    <span class="absolute top-10 left-10 w-32 h-32 bg-details/20 rounded-full blur-3xl"></span>
+    <span class="absolute bottom-10 right-10 w-32 h-32 bg-primary/20 rounded-full blur-3xl"></span>
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="text-center mb-14 relative">
+                <p class="font-cursive text-primary text-4xl mb-2">
+                    — Depoimentos
+                </p>
+
+                <h2 class="text-3xl lg:text-4xl font-title text-textMain mb-4">
+                    Avaliações das nossas clientes
+                </h2>
+
+                <div class="flex items-center justify-center gap-2 mt-4">
+                    <span class="w-10 h-[1px] bg-details"></span>
+                    <span class="w-2 h-2 bg-primary rounded-full"></span>
+                    <span class="w-10 h-[1px] bg-details"></span>
+                </div>
+            </div>
+
+
+            <!-- CARROSSEL -->
+            <div class="relative">
+            <div id="reviews-track"
+                class="flex gap-6 transition-transform duration-500 ease-in-out">
+
+                <!-- CARD -->
+                <div class="review-card">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs text-gray-500 font-parag">
+                        Avaliação do Google
+                        </span>
+                        <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                        class="w-6 opacity-80"
+                        />
+                    </div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-details flex items-center justify-center text-white font-bold">
+                        M
+                        </div>
+                        <div>
+                        <p class="font-semibold text-sm">Mariana Silva</p>
+                        <div class="text-yellow-400 text-sm">★★★★★</div>
+                        </div>
+                    </div>
+
+                    <p class="font-parag italic text-sm text-gray-700">
+                        Atendimento maravilhoso, ambiente aconchegante e resultado impecável.
+                    </p>
+                </div>
+
+                <!-- CARD -->
+                <div class="review-card">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs text-gray-500 font-parag">
+                        Avaliação do Google
+                        </span>
+                        <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                        class="w-6 opacity-80"
+                        />
+                    </div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-details flex items-center justify-center text-white font-bold">
+                        M
+                        </div>
+                        <div>
+                        <p class="font-semibold text-sm">Mariana Silva</p>
+                        <div class="text-yellow-400 text-sm">★★★★★</div>
+                        </div>
+                    </div>
+
+                    <p class="font-parag italic text-sm text-gray-700">
+                        Atendimento maravilhoso, ambiente aconchegante e resultado impecável.
+                    </p>
+                </div>
+
+                <!-- CARD -->
+                <div class="review-card">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs text-gray-500 font-parag">
+                        Avaliação do Google
+                        </span>
+                        <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                        class="w-6 opacity-80"
+                        />
+                    </div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-details flex items-center justify-center text-white font-bold">
+                        M
+                        </div>
+                        <div>
+                        <p class="font-semibold text-sm">Mariana Silva</p>
+                        <div class="text-yellow-400 text-sm">★★★★★</div>
+                        </div>
+                    </div>
+
+                    <p class="font-parag italic text-sm text-gray-700">
+                        Atendimento maravilhoso, ambiente aconchegante e resultado impecável.
+                    </p>
+                </div>
+
+                <!-- CARD -->
+                <div class="review-card">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs text-gray-500 font-parag">
+                        Avaliação do Google
+                        </span>
+                        <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                        class="w-6 opacity-80"
+                        />
+                    </div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-details flex items-center justify-center text-white font-bold">
+                        M
+                        </div>
+                        <div>
+                        <p class="font-semibold text-sm">Mariana Silva</p>
+                        <div class="text-yellow-400 text-sm">★★★★★</div>
+                        </div>
+                    </div>
+
+                    <p class="font-parag italic text-sm text-gray-700">
+                        Atendimento maravilhoso, ambiente aconchegante e resultado impecável.
+                    </p>
+                </div>
+
+                <!-- CARD -->
+                <div class="review-card">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs text-gray-500 font-parag">
+                        Avaliação do Google
+                        </span>
+                        <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                        class="w-6 opacity-80"
+                        />
+                    </div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-details flex items-center justify-center text-white font-bold">
+                        M
+                        </div>
+                        <div>
+                        <p class="font-semibold text-sm">Mariana Silva</p>
+                        <div class="text-yellow-400 text-sm">★★★★★</div>
+                        </div>
+                    </div>
+
+                    <p class="font-parag italic text-sm text-gray-700">
+                        Atendimento maravilhoso, ambiente aconchegante e resultado impecável.
+                    </p>
+                </div>
+
+
+            </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="diferenciais-parallax"
+    class="parallax-section relative py-10 text-segundary px-6 text-center overflow-hidden">
+
+    <!-- overlay -->
+    <div class="absolute inset-0 bg-black/65 z-0"></div>
+
+    <div class="relative z-10 max-w-6xl mx-auto">
+
+        <p class="font-cursive text-primary text-4xl mb-4">
+        — Nossa essência
+        </p>
+
+        <h2 class="text-4xl lg:text-5xl font-title mb-16">
+        Muito além da beleza
+        </h2>
+
+        <div class="grid gap-10 md:grid-cols-3">
+
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+            <i class="fa-solid fa-heart text-primary text-3xl mb-4"></i>
+            <h3 class="font-title text-xl mb-2">
+            Atendimento Humanizado
+            </h3>
+            <p class="font-parag text-sm opacity-90">
+            Cada detalhe pensado para que você se sinta acolhida e especial.
+            </p>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+            <i class="fa-solid fa-star text-primary text-3xl mb-4"></i>
+            <h3 class="font-title text-xl mb-2">
+            Profissionais Especializadas
+            </h3>
+            <p class="font-parag text-sm opacity-90">
+            Equipe atualizada com as melhores técnicas e tendências.
+            </p>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+            <i class="fa-solid fa-spa text-primary text-3xl mb-4"></i>
+            <h3 class="font-title text-xl mb-2">
+            Ambiente Aconchegante
+            </h3>
+            <p class="font-parag text-sm opacity-90">
+            Um espaço pensado para relaxar e cuidar de você.
+            </p>
+        </div>
+
+        </div>
     </div>
+    </section>
+    <section id="cta"
+    class="relative overflow-hidden py-20 bg-segundary text-textMain text-center px-6">
+        <svg
+            class="hidden lg:block absolute top-1/2 -left-24 w-64 opacity-20
+                -translate-y-1/2 text-primary pointer-events-none"
+            viewBox="0 0 200 200"
+            fill="currentColor">
+            <path d="M100 20c20 30 40 40 70 50-30 10-50 20-70 50-20-30-40-40-70-50 30-10 50-20 70-50z"/>
+        </svg>
 
-    <div>
-      <h3 class="font-title text-xl mb-2">Contato</h3>
-      <p class="font-parag text-sm">Rua Alegria Nazaré, 353</p>
-      <p class="font-parag text-sm">(11) 97232-7893</p>
-    </div>
-
-    <div>
-      <h3 class="font-title text-xl mb-2">Siga-nos</h3>
-      <div class="flex gap-4 text-xl">
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-whatsapp"></i>
-      </div>
-    </div>
-
-  </div>
-
-  <p class="text-center text-sm mt-8">
-    © 2026 Belle Aura Studio. Todos os direitos reservados.
-  </p>
-</footer>
+        <svg
+            class="hidden lg:block absolute top-1/2 -right-24 w-64 opacity-20
+                -translate-y-1/2 scale-x-[-1] text-primary pointer-events-none"
+            viewBox="0 0 200 200"
+            fill="currentColor">
+            <path d="M100 20c20 30 40 40 70 50-30 10-50 20-70 50-20-30-40-40-70-50 30-10 50-20 70-50z"/>
+        </svg>
 
 
+        <div class="relative max-w-3xl mx-auto z-10">
 
+            <p class="font-cursive text-primary text-4xl mb-3">
+            — Agendamento
+            </p>
+
+            <h2 class="text-4xl font-title mb-6">
+            Quando você vem se cuidar?
+            </h2>
+
+            <p class="font-parag text-lg mb-10 opacity-80">
+            Entre em contato e reserve seu horário.
+            </p>
+
+            <a href="https://wa.me/5511972327893" target="_blank"
+            class="inline-flex items-center gap-3 border border-primary text-primary
+                    px-10 py-4 rounded-full font-semibold text-lg
+                    hover:bg-primary hover:text-white transition-all duration-300">
+            <i class="fa-brands fa-whatsapp"></i>
+            Agendar pelo WhatsApp
+            </a>
+
+        </div>
+    </section>
+
+
+
+    <footer id="contatos" class="bg-textMain text-segundary py-10 px-6">
+        <div class="max-w-7xl mx-auto grid gap-10 md:grid-cols-3">
+
+            <!-- MARCA -->
+            <div>
+            <h3 class="font-cursive text-4xl text-primary mb-3">
+                Belle Aura
+            </h3>
+            <p class="font-parag text-sm opacity-80">
+                Um espaço criado para valorizar sua beleza, autoestima e bem-estar.
+            </p>
+            </div>
+
+            <!-- CONTATO -->
+            <div>
+            <h4 class="font-title text-lg mb-4">Contato</h4>
+            <p class="text-sm mb-2">
+                <i class="fa-solid fa-location-dot pr-2"></i>
+                Rua Alegria Nazaré, 353
+            </p>
+            <p class="text-sm">
+                <i class="fa-brands fa-whatsapp pr-2"></i>
+                (11) 97232-7893
+            </p>
+            </div>
+
+            <!-- REDES -->
+            <div>
+            <h4 class="font-title text-lg mb-4">Siga-nos</h4>
+            <div class="flex gap-6 text-2xl">
+                <i class="fa-brands fa-instagram hover:text-details transition"></i>
+                <i class="fa-brands fa-facebook hover:text-details transition"></i>
+                <i class="fa-brands fa-whatsapp hover:text-details transition"></i>
+            </div>
+            </div>
+
+        </div>
+
+        <div class="border-t border-white/10 mt-12 pt-6 text-center text-xs opacity-60">
+            © 2026 Belle Aura Studio • Todos os direitos reservados
+        </div>
+    </footer>
   </main>
 
   <script src="https://kit.fontawesome.com/13c88f5cf0.js" crossorigin="anonymous"></script>

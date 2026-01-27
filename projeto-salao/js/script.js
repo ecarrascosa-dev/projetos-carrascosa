@@ -62,15 +62,18 @@ const cards = document.querySelectorAll('.review-card');
 
 let index = 0;
 let startX = 0;
-let currentTranslate = 0;
 let isDragging = false;
+let currentTranslate = 0;
 
-function updateSlide() {
-  const cardWidth = cards[0].offsetWidth + 24; // gap
-  track.style.transform = `translateX(-${index * cardWidth}px)`;
+function cardWidth() {
+  return cards[0].offsetWidth + 24; // gap
 }
 
-// TOUCH EVENTS
+function updateSlide() {
+  track.style.transform = `translateX(-${index * cardWidth()}px)`;
+}
+
+/* ===== TOUCH ===== */
 track.addEventListener('touchstart', e => {
   startX = e.touches[0].clientX;
   isDragging = true;
@@ -79,14 +82,29 @@ track.addEventListener('touchstart', e => {
 track.addEventListener('touchend', e => {
   if (!isDragging) return;
   const endX = e.changedTouches[0].clientX;
-  const diff = startX - endX;
-
-  if (diff > 50 && index < cards.length - 1) index++;
-  if (diff < -50 && index > 0) index--;
-
-  updateSlide();
+  handleSwipe(startX - endX);
   isDragging = false;
 });
 
-// Resize fix
+/* ===== MOUSE ===== */
+track.addEventListener('mousedown', e => {
+  startX = e.clientX;
+  isDragging = true;
+});
+
+window.addEventListener('mouseup', e => {
+  if (!isDragging) return;
+  const endX = e.clientX;
+  handleSwipe(startX - endX);
+  isDragging = false;
+});
+
+/* ===== LOGIC ===== */
+function handleSwipe(distance) {
+  if (distance > 60 && index < cards.length - 1) index++;
+  if (distance < -60 && index > 0) index--;
+  updateSlide();
+}
+
+/* FIX resize */
 window.addEventListener('resize', updateSlide);
