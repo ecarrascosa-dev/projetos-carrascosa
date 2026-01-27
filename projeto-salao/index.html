@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Salão de beleza Belle Aura Studio em Nazaré. Cabelo, skincare e unhas com atendimento humanizado. Agende seu horário.">
+
     <title>Belle Aura Studio</title>
 
   <!-- Links Internos -->
@@ -45,8 +47,8 @@
     </div>
     
     <div class="flex justify-around items-center px-6 text-white pt-3">
-        <img src="assets/imagens/logo-sem-fundo.png" class="w-20 brightness-150" alt="Logo do salão">
-        <button id="menu-btn" class="lg:hidden text-segundary text-2xl z-50">
+        <img src="assets/imagens/logo-sem-fundo.webp" class="w-20 brightness-150" alt="Logo do salão">
+        <button id="menu-btn" class="lg:hidden text-segundary text-2xl z-50" aria-label="Abrir menu">
             <i class="fa-solid fa-bars"></i>
         </button>
 
@@ -73,7 +75,7 @@
     <!-- Topo -->
     <div class="flex items-center justify-between px-6 py-5 border-b border-white/20">
         <span class="font-cursive text-3xl text-primary">Belle Aura</span>
-        <button id="close-menu" class="text-3xl">
+        <button id="close-menu" class="text-3xl" aria-label="Fechar menu">
         <i class="fa-solid fa-xmark"></i>
         </button>
     </div>
@@ -118,12 +120,12 @@
 
     <!-- SLIDES -->
     <div class="absolute inset-0">
-        <img src="assets/imagens/background-main-horizontal.jpg"
-            class="hero-slide active" />
-        <img src="assets/imagens/front-view-smiley-woman-holding-smartphone.jpg"
-            class="hero-slide" />
-        <img src="assets/imagens/close-up-hairdresser-shop-instruments.jpg"
-            class="hero-slide" />
+        <img src="assets/imagens/background-main-horizontal.webp"
+            class="hero-slide active" fetchpriority="high" loading="eager" decoding="async" />
+        <img src="assets/imagens/front-view-smiley-woman-holding-smartphone.webp"
+            class="hero-slide" loading="lazy" decoding="async" />
+        <img src="assets/imagens/close-up-hairdresser-shop-instruments.webp"
+            class="hero-slide" loading="lazy" decoding="async" />
     </div>
 
     <!-- OVERLAY -->
@@ -154,8 +156,8 @@
     <section id="quem-somos" class="reveal bg-segundary grid grid-cols-1 justify-center items-center px-8 pt-10 | lg:grid-cols-2 lg:py-20">
         
         <div class="inline-block relative m-auto pb-8 ">
-            <img src="assets/imagens/faixada-salao.png" class="w-80 rounded-xl relative z-10 | lg:w-[480px]">
-            <img src="assets/imagens/interior-salao.png" class="hidden | lg:flex  lg:w-50 lg:rounded-xl lg:absolute lg:top-[30%] lg:right-[-10%] lg:z-10 lg:shadow-md">
+            <img src="assets/imagens/faixada-salao.webp" class="w-80 rounded-xl relative z-10 | lg:w-[480px]">
+            <img src="assets/imagens/interior-salao.webp" class="hidden | lg:flex  lg:w-50 lg:rounded-xl lg:absolute lg:top-[30%] lg:right-[-10%] lg:z-10 lg:shadow-md">
             <span class="absolute inset-0 -top-3 -left-3 w-full h-full border-4 border-details rounded-xl z-0"></span>
         </div>
         <div>
@@ -191,22 +193,22 @@
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 place-items-center">
             <div class="reveal group relative  w-full max-w-[280px] h-[350px] rounded-xl overflow-hidden cursor-pointer">
-                <img src="assets/imagens/corte-feminino.png" class="w-full h-full object-cover transition-all duration-500 group-hover:grayscale group-hover:scale-110">
+                <img src="assets/imagens/corte-feminino.webp" class="w-full h-full object-cover transition-all duration-500 group-hover:grayscale group-hover:scale-110">
                     <span class="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-all duration-500"></span>
                 <h3 class="absolute inset-0 flex items-center justify-center text-white text-xl font-semibold tracking-wide">Corte de cabelo</h3>
             </div>
             <div class="reveal group relative  w-full max-w-[280px] h-[350px] rounded-xl overflow-hidden cursor-pointer">
-                <img src="assets/imagens/coloracao.png" class="w-full h-full object-cover transition-all duration-500 group-hover:grayscale group-hover:scale-110">
+                <img src="assets/imagens/coloracao.webp" class="w-full h-full object-cover transition-all duration-500 group-hover:grayscale group-hover:scale-110">
                     <span class="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-all duration-500"></span>
                 <h3 class="absolute inset-0 flex items-center justify-center text-white text-xl font-semibold tracking-wide">Coloração & Mechas</h3>
             </div>
             <div class="reveal group relative  w-full max-w-[280px] h-[350px] rounded-xl overflow-hidden cursor-pointer">
-                <img src="assets/imagens/design-sombrancelha.png" class="w-full h-full object-cover transition-all duration-500 group-hover:grayscale group-hover:scale-110">
+                <img src="assets/imagens/design-sombrancelha.webp" class="w-full h-full object-cover transition-all duration-500 group-hover:grayscale group-hover:scale-110">
                     <span class="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-all duration-500"></span>
                 <h3 class="absolute inset-0 flex items-center justify-center text-white text-xl font-semibold tracking-wide">Sobrancelhas</h3>
             </div>
             <div class="reveal group relative  w-full max-w-[280px] h-[350px] rounded-xl overflow-hidden cursor-pointer">
-                <img src="assets/imagens/tratamento-capilar.png" class="w-full h-full object-cover transition-all duration-500 group-hover:grayscale group-hover:scale-110">
+                <img src="assets/imagens/tratamento-capilar.webp" class="w-full h-full object-cover transition-all duration-500 group-hover:grayscale group-hover:scale-110">
                     <span class="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-all duration-500"></span>
                 <h3 class="absolute inset-0 flex items-center justify-center text-white text-xl font-semibold tracking-wide">Tratamentos Capilares</h3>
             </div>
@@ -229,22 +231,22 @@
         <!-- GALERIA -->
         <div class="grid grid-cols-2 gap-4 lg:col-span-2">
             <img
-                src="assets/imagens/artista-feminina-aplicar-maquiagem-no-modelo_23-2148398671.jpg"
+                src="assets/imagens/artista-feminina-aplicar-maquiagem-no-modelo_23-2148398671.webp"
                 class="reveal-scale rounded-xl object-cover h-48 w-full hover:scale-105 transition duration-300"
                 alt="Cabelo feminino em salão">
 
             <img
-                src="assets/imagens/healthy-beautiful-manicure-flat-lay.jpg"
+                src="assets/imagens/healthy-beautiful-manicure-flat-lay.webp"
                 class="reveal-scale rounded-xl object-cover h-48 w-full hover:scale-105 transition duration-300"
                 alt="Ambiente de salão de beleza">
 
             <img
-                src="assets/imagens/interior-salao.png"
+                src="assets/imagens/interior-salao.webp"
                 class="reveal-scale rounded-xl object-cover h-48 w-full hover:scale-105 transition duration-300"
                 alt="Maquiagem profissional">
 
             <img
-                src="assets/imagens/mulher-styling-dela-cabelo-em-saloon_107420-12143.jpg"
+                src="assets/imagens/mulher-styling-dela-cabelo-em-saloon_107420-12143.webp"
                 class="reveal-scale rounded-xl object-cover h-48 w-full hover:scale-105 transition duration-300"
                 alt="Beleza e estética feminina">
             </div>

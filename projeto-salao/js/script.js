@@ -123,3 +123,5 @@ const observer = new IntersectionObserver(entries => {
 
 document.querySelectorAll('.reveal, .reveal-scale')
   .forEach(el => observer.observe(el));
+
+
