@@ -4,7 +4,7 @@ const header = document.getElementById('header');
 window.addEventListener('scroll', () => {
   const currentScroll = window.pageYOffset;
 
-  if (currentScroll > lastScroll) {
+  if (currentScroll > lastScroll && currentScroll > 120) {
     header.classList.add('header-hidden');
   } else {
     header.classList.remove('header-hidden');
@@ -108,3 +108,18 @@ function handleSwipe(distance) {
 
 /* FIX resize */
 window.addEventListener('resize', updateSlide);
+
+
+/*JS GLOBAL*/
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+    }
+  });
+}, {
+  threshold: 0.15
+});
+
+document.querySelectorAll('.reveal, .reveal-scale')
+  .forEach(el => observer.observe(el));
