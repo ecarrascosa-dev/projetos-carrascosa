@@ -1,154 +1,696 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Carrascosa</title>
-    <!--Links interno-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrascosa | Web Developer</title>
+
+     <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
-    
-    <!--Links externo-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="assets/icons/carrascosa-favicon-minimal.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            darkBg: '#0B1120',
+            darkCard: '#111827',
+            primaryBlue: '#2563EB',
+            lightBlue: '#60A5FA',
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
-    <div id="main-one" class="px-[5%] | sm:px-[10%]">
-        <header class="flex justify-center">
-            <div class="flex justify-between shadow-[2px_1px_4px_rgba(0,0,0,0.25)] px-3 py-2 mt-3 rounded-md w-full">
-                <div>
-                    <h1 class="font-[poppins]">Eduardo Carrascosa</h1>
-                </div>
-                <nav>
-                    <ul class="hidden | sm:flex sm:gap-6 sm:justify-center">
-                        <li><a href="#sobre" class="font-[inter] hover:text-orange-500 transition">Sobre</a></li>
-                        <li><a href="#beneficios" class="font-[inter] hover:text-orange-500 transition">Benefícios</a></li>
-                        <li><a href="#portfolio" class="font-[inter] hover:text-orange-500 ">Portfólio</a></li>
-                        <li><a href="#contato" class="font-[inter] hover:text-orange-500 transition">Contato</a></li>
-                    </ul>
-                    <a href="#" class="bg-orange-500 text-white font-[inter] py-1 px-2 rounded-sm | sm:hidden">Contato</a>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <section id="welcome" class="flex justify-center">
-                <div class="flex flex-col shadow-[2px_1px_4px_rgba(0,0,0,0.25)] p-2 pb-4 mt-3 rounded-md | lg:grid lg:grid-cols-[2fr_1fr] lg:p-6">
-                    <div>
-                        <h1 class="font-[poppins] w-3/4 font-bold text-3xl text-left | lg:text-6xl">Sua marca merece mais do que um <span class="text-orange-600">link.</span></h1>
-                        <p class="font-[inter] font-light pt-2 pb-4 | lg:text-3xl lg:w-10/12 lg:pt-4 lg:pb-6">Transformo ideias em sites modernos, rápidos e que realmente geram resultados para o seu negócio.</p>
-                        <a href="https://wa.me/5511974485503" target="_blank" class="bg-orange-500 text-white px-3 py-2 rounded-lg font-[poppins] hover:bg-orange-600 transition | lg:px-5 lg:py-3 lg:text-xl">
-                            Fale comigo no WhatsApp
-                        </a>
-                    </div>
-                    <div>
-                    <img src="assets/imgs/homem.png" class="hidden | lg:block lg:max-w-[400px] lg:m-auto" alt="">
-                    </div>
-                </div>
-            </section>
-            <section id="benefits" class="my-7 | lg:grid lg:grid-cols-2 ">
-                <div>
-                    <h2 class="font-[inter] font-bold text-2xl w-11/12 | lg:text-4xl">Por que escolher meu serviço de criação de sites?</h2>
-                    <p class="font-[inter] font-light pt-2 pb-4 w-11/12 | lg:text-2xl">Seja encontrado, lembrado e confiável. Meus sites fazem seu negócio se destacar e atrair mais clientes.</p>
-                    <div class="hidden | lg:block lg:bg-[url(assets/imgs/beneficios.png)] lg:bg-contain lg:bg-no-repeat lg:bg-center lg:shadow-[2px_1px_4px_rgba(0,0,0,0.25)] lg:h-60 lg:w-11/12">
-        
-                    </div>
-                </div>
-                <div class="grid grid-cols-1 gap-4 text-center">
-                    <div class="p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition bg-white">
-                        <h3 class="text-xl text-orange-600 font-[poppins] font-semibold mb-2"><i class="fa-solid fa-globe"></i> Mais visibilidade</h3>
-                        <p class="font-[inter] font-light">Clientes locais encontram você no Google e no Maps.</p>
-                    </div>
-                    <div class="p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition bg-white">
-                        <h3 class="text-xl text-orange-600 font-[poppins] font-semibold mb-2"><i class="fa-solid fa-bolt"></i> Sites rápidos</h3>
-                        <p class="font-[inter] font-light">Carregamento leve e otimizado para celular.</p>
-                    </div>
-                    <div class="p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition bg-white">
-                        <h3 class="text-xl text-orange-600 font-[poppins] font-semibold mb-2"><i class="fa-solid fa-palette"></i> Design que destaca</h3>
-                        <p class="font-[inter] font-light">Visual profissional e moderno que reforça sua marca.</p>
-                    </div>
-                </div>
-            </section>
-            <section id="about-me" class="pb-10" >
-                <h2 class="font-[inter] font-bold text-center text-3xl w-11/12 | lg:text-4xl">Quem sou eu?</h2>
-                <p class="text-center py-2 | lg:text-2xl lg:pb-6">Sou o <span class="text-orange-600">Eduardo Carrascosa</span>, desenvolvedor front-end apaixonado por criar sites simples e eficientes para negócios locais. Acredito que um bom site deve ser bonito, leve e gerar resultados reais, como mais ligações, pedidos e visitas.</p>
-                <ul class="list-none | lg:text-2xl lg:text-center">
-                    <li><i class="fa-solid fa-check mr-2 text-orange-600"></i>Experiência com HTML, CSS, JavaScript e Tailwind</li>
-                    <li><i class="fa-solid fa-check mr-2 text-orange-600"></i>Design moderno e adaptável a celulares</li>
-                    <li><i class="fa-solid fa-check mr-2 text-orange-600"></i>Entrego sites completos e prontos para uso</li>
-                </ul>
-            </section>
-            <section id="projects">
-                <div class="p-4 rounded-2xl border border-gray-100 shadow-md transition bg-white">
-                    <h2 class="font-[inter] font-bold text-center text-3xl w-11/12 pb-4 | lg:text-4xl">Meus projetos</h2>
-                        <div class="grid grid-cols-1 | lg:grid-cols-2">
-                            <div class="mb-4">
-                                <h3 class="font-[inter] font-bold w-11/12 | lg:text-4xl lg:text-center lg:pb-3 lg:w-full">CineMel</h3>
-                                <div class="flex justify-center items-center p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition bg-[url(assets/imgs/cinemel-bg.PNG)] bg-cover h-32 hover:scale-105 | lg:w-3/4 lg:h-52 lg:m-auto" onclick="abrirPopCineMel()">
-                                </div>
-                            </div>
-                            <!--POP CINEMEL-->
-                            <section id="pop-cinemel" class="hidden">
-                                <div class="fixed inset-0 bg-black/60 flex items-center justify-center z-50 ">
-                                    <div class="bg-white rounded-2xl shadow-lg max-w-3xl w-11/12 p-8 relative animate-in fade-in duration-300">
-                                    
-                                    <button class="absolute top-4 right-4 text-gray-400 hover:text-gray-600" onclick="fecharPopCineMel()">
-                                        <i class="fa-solid fa-xmark text-xl"></i>
-                                    </button>
 
-                                    <div class="grid md:grid-cols-2 gap-6">
-                                        <img src="assets/imgs/cinemel.png" alt="Projeto cinemel" class="rounded-xl shadow-sm object-cover w-full">
+<!-- MODAL -->
+<div id="modal"
+     class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50">
 
-                                        <div>
-                                        <h3 class="text-2xl font-[poppins] font-semibold text-gray-800 mb-2">Landing Page para Barbearia</h3>
-                                        <p class="text-gray-600 font-[inter] text-sm mb-4">
-                                            Site moderno e otimizado para atrair novos clientes, com foco em design responsivo e carregamento rápido.
-                                        </p>
+  <div class="bg-slate-900 max-w-lg w-full mx-6 rounded-xl p-6 relative">
 
-                                        <div class="mb-4">
-                                            <h4 class="font-semibold text-gray-800 mb-2 text-sm">Tecnologias usadas:</h4>
-                                            <div class="flex flex-wrap gap-2 text-sm">
-                                            <span class="bg-orange-100 text-orange-600 px-3 py-1 rounded-lg">HTML</span>
-                                            <span class="bg-orange-100 text-orange-600 px-3 py-1 rounded-lg">CSS</span>
-                                            </div>
-                                        </div>
+    <button onclick="closeModal()"
+            class="absolute top-3 right-4 text-slate-400 hover:text-white">
+      ✕
+    </button>
 
-                                        <div class="flex items-center gap-4">
-                                            <a href="#" target="_blank" class="flex items-center gap-2 text-gray-700 hover:text-orange-600 font-medium">
-                                            <i class="fa-brands fa-github text-lg"></i> GitHub
-                                            </a>
-                                            <a href="#" target="_blank" class="flex items-center gap-2 text-gray-700 hover:text-orange-600 font-medium">
-                                            <i class="fa-solid fa-globe text-lg"></i> Ver site
-                                            </a>
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </section>
-                            <div class="mb-4">
-                                <h3 class="font-[inter] font-bold w-11/12 | lg:text-4xl lg:text-center lg:pb-3 lg:w-full">Essência</h3>
-                                <div class="flex justify-center items-center p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition bg-[url(assets/imgs/essencia.PNG)] bg-cover h-32 hover:scale-105 | lg:w-3/4 lg:h-52 lg:m-auto">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    <h3 id="modalTitle" class="font-display text-xl mb-4"></h3>
 
-            <section id="contact" class="py-24 px-6 text-center">
-                <h2 class="text-3xl font-bold mb-4 text-gray-900 | lg:text-4xl">Vamos criar seu site?</h2>
-                <p class="text-gray-600 mb-8 | lg:text-2xl">Entre em contato comigo e vamos transformar seu negócio com um site de verdade.</p>
-                <a href="https://wa.me/5511974485503" target="_blank" class="bg-orange-500 text-white px-8 py-4 rounded-lg font-medium hover:bg-orange-600 transition text-lg">
-                Fale comigo no WhatsApp
-                </a>
-            </section>
+    <img id="modalImage"
+         src=""
+         class="rounded-lg mb-4">
+
+    <p id="modalDescription" class="text-slate-400 mb-4"></p>
+
+    <a id="modalLink"
+       href="#"
+       target="_blank"
+       class="bg-blue-600 px-5 py-2 rounded-full text-white text-sm">
+      Ver projeto
+    </a>
+
+  </div>
+</div>
+
+<body class=" bg-darkBg text-slate-200 font-sans overflow-x-hidden">
+
+  <!-- NAV -->
+  <header class="py-6 relative z-10">
+    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+      <h1 class="font-display text-xl font-bold">Carrascosa.</h1>
+
+      <nav class="space-x-8 hidden md:block">
+        <a href="#servicos" class="hover:text-primaryBlue transition">Serviços</a>
+        <a href="#projetos" class="hover:text-primaryBlue transition">Projetos</a>
+        <a href="#contato" class="bg-gradient-to-r from-primaryBlue to-blue-500 px-5 py-2 rounded-full text-white">
+          Fale comigo
+        </a>
+      </nav>
     </div>
-        <footer class="py-6 w-full bg-gray-100 text-center text-gray-500 text-sm">
-            © 2025 Eduardo Carrascosa — Todos os direitos reservados.
-        </footer>
-    </main>
-    <script src="https://kit.fontawesome.com/13c88f5cf0.js" crossorigin="anonymous"></script>
-    <script src="js/pops.js" defer></script>
+  </header>
+
+  <!-- HERO -->
+  <section class="animate-hero relative py-36 text-center px-6">
+
+    <!-- Blur effects -->
+    <div class="absolute w-96 h-96 bg-primaryBlue opacity-30 blur-[180px] rounded-full -top-32 -left-32"></div>
+    <div class="absolute w-96 h-96 bg-blue-500 opacity-30 blur-[180px] rounded-full -bottom-32 -right-32"></div>
+
+    <div class="relative max-w-4xl mx-auto">
+      <h2 class="font-display text-4xl md:text-6xl font-extrabold leading-tight">
+        Eu crio experiências digitais
+        que geram <span class="bg-gradient-to-r from-primaryBlue to-lightBlue bg-clip-text text-transparent">
+          resultados reais
+        </span>.
+      </h2>
+
+      <p class="mt-6 text-slate-400 text-lg">
+        Sites modernos, rápidos e estratégicos para empresas que querem crescer online.
+      </p>
+
+      <div class="mt-10 flex justify-center gap-6 flex-wrap">
+        <a href="#contato"
+          class="bg-gradient-to-r from-primaryBlue to-blue-500 px-8 py-4 rounded-full text-white font-semibold shadow-lg shadow-blue-500/30 hover:scale-105 transition">
+          Começar projeto
+        </a>
+
+        <a href="#projetos"
+          class="border border-primaryBlue px-8 py-4 rounded-full text-primaryBlue hover:bg-primaryBlue hover:text-white transition">
+          Ver trabalhos
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="reveal py-28 px-6 border-t border-white/5">
+    <div class="max-w-6xl mx-auto">
+
+        <div class="text-center mb-20">
+        <h3 class="text-3xl md:text-4xl font-display font-bold mb-4">
+            Soluções digitais estratégicas
+        </h3>
+        <p class="text-slate-400 max-w-2xl mx-auto text-sm md:text-base">
+            Mais do que um site bonito. Desenvolvimento focado em performance,
+            posicionamento e geração de oportunidades reais.
+        </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- CARD 1 -->
+        <div class="group relative bg-slate-900/60 backdrop-blur-sm p-8 rounded-2xl border border-white/5 hover:border-blue-500/40 transition duration-300 hover:-translate-y-2">
+
+            <div class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center mb-6">
+            <div class="w-5 h-5 bg-blue-500 rounded-sm"></div>
+            </div>
+
+            <h4 class="font-display text-lg font-semibold mb-3">
+            Sites Institucionais
+            </h4>
+
+            <p class="text-slate-400 text-sm mb-6">
+            Estrutura profissional para empresas que querem transmitir autoridade,
+            clareza e confiança no ambiente digital.
+            </p>
+
+            <ul class="text-xs text-slate-500 space-y-2">
+            <li>• Layout moderno e responsivo</li>
+            <li>• Estrutura estratégica de conteúdo</li>
+            <li>• Otimização básica para SEO</li>
+            </ul>
+        </div>
+
+
+        <!-- CARD 2 -->
+        <div class="group relative bg-slate-900/60 backdrop-blur-sm p-8 rounded-2xl border border-white/5 hover:border-blue-500/40 transition duration-300 hover:-translate-y-2">
+
+            <div class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center mb-6">
+            <div class="w-5 h-5 bg-blue-500 rounded-full"></div>
+            </div>
+
+            <h4 class="font-display text-lg font-semibold mb-3">
+            Landing Pages de Conversão
+            </h4>
+
+            <p class="text-slate-400 text-sm mb-6">
+            Páginas focadas em transformar visitantes em leads ou clientes,
+            com estrutura orientada à decisão.
+            </p>
+
+            <ul class="text-xs text-slate-500 space-y-2">
+            <li>• Copy estratégica</li>
+            <li>• Design orientado à ação</li>
+            <li>• Integração com WhatsApp ou formulário</li>
+            </ul>
+        </div>
+
+
+        <!-- CARD 3 -->
+        <div class="group relative bg-slate-900/60 backdrop-blur-sm p-8 rounded-2xl border border-white/5 hover:border-blue-500/40 transition duration-300 hover:-translate-y-2">
+
+            <div class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center mb-6">
+            <div class="w-5 h-5 bg-blue-500 rotate-45"></div>
+            </div>
+
+            <h4 class="font-display text-lg font-semibold mb-3">
+            Performance & Otimização
+            </h4>
+
+            <p class="text-slate-400 text-sm mb-6">
+            Desenvolvimento focado em velocidade, estabilidade e experiência
+            fluida em qualquer dispositivo.
+            </p>
+
+            <ul class="text-xs text-slate-500 space-y-2">
+            <li>• Código limpo e escalável</li>
+            <li>• Carregamento otimizado</li>
+            <li>• Ajustes técnicos contínuos</li>
+            </ul>
+        </div>
+
+        </div>
+
+    </div>
+    </section>
+
+
+  <section id="processo" class="reveal relative py-32 px-6 overflow-hidden bg-[url('https://www.transparenttextures.com/patterns/dark-mosaic.png')] bg-fixed"
+>
+    <div class="max-w-6xl mx-auto">
+
+        <div class="text-center mb-24">
+        <h3 class="text-4xl font-display font-bold mb-4">
+            Processo de Desenvolvimento
+        </h3>
+        <p class="text-slate-400 max-w-2xl mx-auto">
+            Cada projeto segue uma estrutura estratégica para garantir qualidade,
+            clareza e resultado.
+        </p>
+        </div>
+
+        <!-- Linha Central -->
+        <div class="absolute left-1/2 top-0 h-full w-[2px] bg-gradient-to-b from-transparent via-blue-500/40 to-transparent -translate-x-1/2"></div>
+
+        <div class="space-y-28 relative">
+
+        <!-- ITEM -->
+        <div class="relative flex items-center">
+            
+            <!-- Lado esquerdo -->
+            <div class="w-1/2 pr-12">
+            <div class="bg-slate-900/70 p-8 rounded-2xl border border-white/5 hover:border-blue-500/30 transition">
+                <h4 class="font-display text-xl font-semibold mb-3">
+                Diagnóstico Estratégico
+                </h4>
+                <p class="text-slate-400 text-sm">
+                Análise profunda do negócio, mercado e objetivos para definir
+                a direção correta do projeto.
+                </p>
+            </div>
+            </div>
+
+            <!-- Número -->
+            <div class="relative z-10 w-14 h-14 flex items-center justify-center 
+                        bg-blue-600 text-white rounded-full font-bold 
+                        shadow-xl shadow-blue-500/40">
+            01
+            </div>
+
+            <div class="w-1/2"></div>
+        </div>
+
+
+        <!-- ITEM 2 -->
+        <div class="relative flex items-center">
+            <div class="w-1/2"></div>
+
+            <div class="relative z-10 w-14 h-14 flex items-center justify-center 
+                        bg-blue-600 text-white rounded-full font-bold 
+                        shadow-xl shadow-blue-500/40">
+            02
+            </div>
+
+            <div class="w-1/2 pl-12">
+            <div class="bg-slate-900/70 p-8 rounded-2xl border border-white/5 hover:border-blue-500/30 transition">
+                <h4 class="font-display text-xl font-semibold mb-3">
+                Estrutura & Planejamento
+                </h4>
+                <p class="text-slate-400 text-sm">
+                Organização estratégica das seções, fluxo e experiência do usuário.
+                </p>
+            </div>
+            </div>
+        </div>
+
+
+        <!-- ITEM 3 -->
+        <div class="relative flex items-center">
+            <div class="w-1/2 pr-12">
+            <div class="bg-slate-900/70 p-8 rounded-2xl border border-white/5 hover:border-blue-500/30 transition">
+                <h4 class="font-display text-xl font-semibold mb-3">
+                Design & Desenvolvimento
+                </h4>
+                <p class="text-slate-400 text-sm">
+                Construção visual e técnica focada em performance, clareza
+                e experiência premium.
+                </p>
+            </div>
+            </div>
+
+            <div class="relative z-10 w-14 h-14 flex items-center justify-center 
+                        bg-blue-600 text-white rounded-full font-bold 
+                        shadow-xl shadow-blue-500/40">
+            03
+            </div>
+
+            <div class="w-1/2"></div>
+        </div>
+
+
+        <!-- ITEM 4 -->
+        <div class="relative flex items-center">
+            <div class="w-1/2"></div>
+
+            <div class="relative z-10 w-14 h-14 flex items-center justify-center 
+                        bg-blue-600 text-white rounded-full font-bold 
+                        shadow-xl shadow-blue-500/40">
+            04
+            </div>
+
+            <div class="w-1/2 pl-12">
+            <div class="bg-slate-900/70 p-8 rounded-2xl border border-white/5 hover:border-blue-500/30 transition">
+                <h4 class="font-display text-xl font-semibold mb-3">
+                Ajustes & Validação
+                </h4>
+                <p class="text-slate-400 text-sm">
+                Revisões estratégicas e refinamentos para alinhamento total.
+                </p>
+            </div>
+            </div>
+        </div>
+
+
+        <!-- ITEM 5 -->
+        <div class="relative flex items-center">
+            <div class="w-1/2 pr-12">
+            <div class="bg-slate-900/70 p-8 rounded-2xl border border-white/5 hover:border-blue-500/30 transition">
+                <h4 class="font-display text-xl font-semibold mb-3">
+                Entrega & Suporte
+                </h4>
+                <p class="text-slate-400 text-sm">
+                Publicação oficial e acompanhamento inicial para garantir estabilidade.
+                </p>
+            </div>
+            </div>
+
+            <div class="relative z-10 w-14 h-14 flex items-center justify-center 
+                        bg-blue-600 text-white rounded-full font-bold 
+                        shadow-xl shadow-blue-500/40">
+            05
+            </div>
+
+            <div class="w-1/2"></div>
+        </div>
+
+        </div>
+
+    </div>
+    </section>
+
+
+
+  <!-- PROJETOS -->
+  <section id="projetos" class="reveal py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+
+        <div class="flex items-center justify-between mb-12">
+        <h3 class="text-2xl md:text-3xl font-display font-bold">
+            Projetos Selecionados
+        </h3>
+
+        <a href="#"
+            class="text-sm text-blue-400 hover:text-blue-300 transition">
+            Ver todos →
+        </a>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- CARD 1 -->
+        <div onclick="openModal('1')"
+            class="group cursor-pointer bg-slate-900/60 backdrop-blur-sm rounded-xl overflow-hidden border border-white/5 hover:border-blue-500/40 transition hover:scale-[1.02]
+">
+
+            <div class="relative overflow-hidden">
+            <img src="https://via.placeholder.com/600x400"
+                class="w-full h-44 object-cover group-hover:scale-105 transition duration-500">
+            </div>
+
+            <div class="p-4">
+            <h4 class="font-display text-base font-semibold mb-1">
+                Projeto Alpha
+            </h4>
+
+            <p class="text-xs text-slate-400 mb-3">
+                Site institucional focado em conversão.
+            </p>
+
+            <div class="flex gap-2 flex-wrap text-[10px]">
+                <span class="bg-blue-500/10 text-blue-400 px-2 py-1 rounded">
+                Tailwind
+                </span>
+                <span class="bg-blue-500/10 text-blue-400 px-2 py-1 rounded">
+                JS
+                </span>
+            </div>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div onclick="openModal('2')"
+            class="group cursor-pointer bg-slate-900/60 backdrop-blur-sm rounded-xl overflow-hidden border border-white/5 hover:border-blue-500/40 transition hover:scale-[1.02]
+">
+
+            <div class="relative overflow-hidden">
+            <img src="https://via.placeholder.com/600x400"
+                class="w-full h-44 object-cover group-hover:scale-105 transition duration-500">
+            </div>
+
+            <div class="p-4">
+            <h4 class="font-display text-base font-semibold mb-1">
+                Landing Beta
+            </h4>
+
+            <p class="text-xs text-slate-400 mb-3">
+                Página estratégica de alta performance.
+            </p>
+
+            <div class="flex gap-2 flex-wrap text-[10px]">
+                <span class="bg-blue-500/10 text-blue-400 px-2 py-1 rounded">
+                SEO
+                </span>
+                <span class="bg-blue-500/10 text-blue-400 px-2 py-1 rounded">
+                HTML
+                </span>
+            </div>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div onclick="openModal('3')"
+            class="group cursor-pointer bg-slate-900/60 backdrop-blur-sm rounded-xl overflow-hidden border border-white/5 hover:border-blue-500/40 transition hover:scale-[1.02]
+">
+
+            <div class="relative overflow-hidden">
+            <img src="https://via.placeholder.com/600x400"
+                class="w-full h-44 object-cover group-hover:scale-105 transition duration-500">
+            </div>
+
+            <div class="p-4">
+            <h4 class="font-display text-base font-semibold mb-1">
+                Sistema Gamma
+            </h4>
+
+            <p class="text-xs text-slate-400 mb-3">
+                Plataforma web personalizada.
+            </p>
+
+            <div class="flex gap-2 flex-wrap text-[10px]">
+                <span class="bg-blue-500/10 text-blue-400 px-2 py-1 rounded">
+                React
+                </span>
+                <span class="bg-blue-500/10 text-blue-400 px-2 py-1 rounded">
+                API
+                </span>
+            </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    </section>
+    <section id="sobre" class="reveal py-32 px-6 border-t border-white/5 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-20 items-center">
+
+            <!-- LADO VISUAL -->
+            <div class="relative">
+                <div class="absolute w-[500px] h-[500px] bg-blue-600/20 blur-[140px] rounded-full"></div>
+                <div class="relative bg-white/5 backdrop-blur-xl border border-white/10 
+                            rounded-3xl p-10 space-y-8">
+                <div class="inline-flex items-center gap-2 bg-blue-600/20 
+                            text-blue-400 px-4 py-2 rounded-full text-sm">
+                    Disponível para novos projetos
+                </div>
+
+                <!-- Stack -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Stack & Especialidades</h4>
+
+                    <div class="flex flex-wrap gap-3">
+
+                    <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm">
+                        HTML
+                    </span>
+
+                    <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm">
+                        Tailwind CSS
+                    </span>
+
+                    <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm">
+                        JavaScript
+                    </span>
+
+                    <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm">
+                        SEO
+                    </span>
+
+                    <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm">
+                        Performance
+                    </span>
+
+                    <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm">
+                        UI / UX
+                    </span>
+
+                    </div>
+                </div>
+                <!-- Diferencial -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-3">Diferencial</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                    Desenvolvimento focado em conversão, performance
+                    e posicionamento profissional — não apenas estética.
+                    </p>
+                </div>
+            </div>
+            </div>
+            <!-- TEXTO -->
+            <div>
+
+                <h3 class="text-4xl md:text-5xl font-display font-bold mb-6 leading-tight">
+                Construindo presença digital
+                <span class="text-blue-400">estratégica.</span>
+                </h3>
+
+                <p class="text-slate-400 mb-6 leading-relaxed text-lg">
+                Ajudo empresas e profissionais a saírem do amadorismo digital
+                e conquistarem autoridade através de sites modernos,
+                rápidos e orientados a resultado.
+                </p>
+
+                <p class="text-slate-500 mb-10 leading-relaxed">
+                Cada projeto é desenvolvido com estrutura estratégica,
+                design de alto padrão e foco em conversão.
+                </p>
+
+                <!-- MINI STATS -->
+                <div class="flex gap-12 mb-12">
+
+                <div>
+                    <p class="font-bold text-blue-400 inline-block text-xl">+</p><h4 class="inline-block text-3xl font-bold text-blue-400 counter" data-target="10">0</h4>
+
+                    <p class="text-sm text-slate-500">Projetos entregues</p>
+                </div>
+
+                <div>
+                    <h4 class="inline-block text-3xl font-bold text-blue-400 counter" data-target="100">0</h4><h4 class="inline-block text-3xl font-bold text-blue-400">%</h4>
+                    <p class="text-sm text-slate-500">Responsivo</p>
+                </div>
+
+                <div>
+                    <h4 class="text-3xl font-bold text-blue-400">SEO</h4>
+                    <p class="text-sm text-slate-500">Otimizado</p>
+                </div>
+
+                </div>
+
+                <!-- BOTÃO -->
+                <a href="#contato"
+                class="inline-block bg-gradient-to-r from-blue-600 to-blue-500 
+                        px-8 py-4 rounded-full text-white font-semibold 
+                        shadow-xl shadow-blue-500/30 hover:scale-105 
+                        transition duration-300">
+                Iniciar um projeto →
+                </a>
+
+            </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="reveal py-32 px-6 border-t border-white/5 relative overflow-hidden">
+
+    <!-- Background glow -->
+    <div class="absolute -top-40 left-1/2 -translate-x-1/2 
+                w-[800px] h-[800px] 
+                bg-blue-600/10 blur-[180px] rounded-full"></div>
+
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center relative z-10">
+
+        <!-- TEXTO -->
+        <div class="space-y-8">
+
+        <span class="text-blue-400 uppercase tracking-widest text-sm">
+            Resultado real
+        </span>
+
+        <h3 class="text-4xl md:text-5xl font-bold leading-tight">
+            Um site comum
+            <br>
+            não muda seu negócio.
+        </h3>
+
+        <p class="text-slate-400 text-lg leading-relaxed">
+            Estrutura estratégica, posicionamento e performance
+            transformam visitantes em oportunidades.
+        </p>
+        <div class="space-y-4">
+            <div class="flex items-center gap-4">
+            <div class="w-3 h-3 bg-blue-500 rounded-full shadow-lg shadow-blue-500/50"></div>
+            <p class="text-slate-300">Mais autoridade no primeiro impacto</p>
+            </div>
+
+            <div class="flex items-center gap-4">
+            <div class="w-3 h-3 bg-blue-500 rounded-full shadow-lg shadow-blue-500/50"></div>
+            <p class="text-slate-300">Experiência fluida e moderna</p>
+            </div>
+
+            <div class="flex items-center gap-4">
+            <div class="w-3 h-3 bg-blue-500 rounded-full shadow-lg shadow-blue-500/50"></div>
+            <p class="text-slate-300">Estrutura pensada para conversão</p>
+            </div>
+        </div>
+        </div>
+
+        <!-- VISUAL MOCKUP -->
+        <div class="relative">
+
+        <!-- Card principal -->
+        <div class="relative bg-white/5 backdrop-blur-xl 
+                    border border-white/10 
+                    rounded-3xl 
+                    p-6 shadow-2xl animate-float">
+
+            <img 
+            src="assets/imgs/mockup-site.png"
+            alt="Mockup projeto"
+            class="rounded-xl "
+            />
+
+        </div>
+
+        <!-- Card flutuante 1 -->
+        <div class="absolute -top-10 -right-10 
+                    bg-blue-600/20 backdrop-blur-xl 
+                    border border-blue-500/30 
+                    rounded-2xl p-4 text-sm animate-float">
+
+            +38% Conversão
+        </div>
+
+        <!-- Card flutuante 2 -->
+        <div class="absolute -bottom-8 -left-8 
+                    bg-white/5 backdrop-blur-xl 
+                    border border-white/10 
+                    rounded-2xl p-4 text-sm animate-float">
+
+            Performance 95+
+        </div>
+
+        </div>
+
+    </div>
+
+    </section>
+
+
+
+  <section class="reveal relative py-32 px-6 overflow-hidden border-t border-white/5">
+    <!-- Glow de fundo -->
+    <div class="absolute inset-0 bg-gradient-to-r from-blue-600/10 via-transparent to-blue-600/10"></div>
+
+    <div class="relative max-w-4xl mx-auto text-center">
+
+        <h3 class="text-4xl md:text-5xl font-display font-bold mb-6 leading-tight">
+        Seu negócio merece um site
+        <span class="text-blue-400">à altura da sua ambição.</span>
+        </h3>
+
+        <p class="text-slate-400 mb-10 max-w-2xl mx-auto">
+        Se você quer sair do amadorismo digital e construir uma presença
+        profissional que gere oportunidades reais, vamos conversar.
+        </p>
+
+        <a href="https://wa.me/seunumero"
+        class="cta-btn inline-block bg-blue-600 hover:bg-blue-500 px-10 py-5 rounded-full text-white font-semibold shadow-2xl shadow-blue-500/40 transition duration-300"
+>
+        Iniciar meu projeto →
+        </a>
+
+        <p class="text-xs text-slate-500 mt-6">
+        Resposta rápida • Atendimento personalizado
+        </p>
+
+    </div>
+    </section>
+
+
+  <!-- FOOTER -->
+  <footer id="contato" class="py-10 text-center text-slate-500 border-t border-blue-500/10">
+    © 2026 Carrascosa.dev — Todos os direitos reservados
+  </footer>
+  <script src="js/pops.js"></script>
 </body>
 </html>
