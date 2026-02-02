@@ -40,3 +40,6 @@ animation: heroFade 1.2s ease forwards;
 animation: float 6s ease-in-out infinite;
 }
 
+* {
+    border:1px solid red;
+}
