@@ -31,35 +31,6 @@
   </script>
 </head>
 
-<!-- MODAL -->
-<div id="modal"
-     class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50">
-
-  <div class="bg-slate-900 max-w-lg w-full mx-6 rounded-xl p-6 relative">
-
-    <button onclick="closeModal()"
-            class="absolute top-3 right-4 text-slate-400 hover:text-white">
-      ✕
-    </button>
-
-    <h3 id="modalTitle" class="font-display text-xl mb-4"></h3>
-
-    <img id="modalImage"
-         src=""
-         class="rounded-lg mb-4">
-
-    <p id="modalDescription" class="text-slate-400 mb-4"></p>
-
-    <a id="modalLink"
-       href="#"
-       target="_blank"
-       class="bg-blue-600 px-5 py-2 rounded-full text-white text-sm">
-      Ver projeto
-    </a>
-
-  </div>
-</div>
-
 <body class=" bg-darkBg text-slate-200 font-sans overflow-x-hidden">
 
   <!-- NAV -->
@@ -479,13 +450,13 @@
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
         <!-- CARD 1 -->
-        <div onclick="openModal('1')"
+        <div
             class="group cursor-pointer bg-slate-900/60 backdrop-blur-sm rounded-xl overflow-hidden border border-white/5 hover:border-blue-500/40 transition hover:scale-[1.02]
 ">
 
             <div class="relative overflow-hidden">
             <img src="assets/imgs/banner-balleAura.png"
-                class="w-full h-44 object-cover group-hover:scale-105 transition duration-500">
+                class=" w-full h-44 group-hover:scale-105 transition duration-500">
             </div>
 
             <div class="p-4">
@@ -504,18 +475,24 @@
                 <span class="bg-blue-500/10 text-blue-400 px-2 py-1 rounded">
                 JS
                 </span>
+                <span class="bg-blue-500/10 text-blue-400 px-2 py-1 rounded">
+                HTML 
+                </span>
+                <span class="bg-blue-500/10 text-blue-400 px-2 py-1 rounded">
+                CSS
+                </span>
             </div>
             </div>
         </div>
 
         <!-- CARD 2 -->
-        <div onclick="openModal('2')"
+        <div
             class="group cursor-pointer bg-slate-900/60 backdrop-blur-sm rounded-xl overflow-hidden border border-white/5 hover:border-blue-500/40 transition hover:scale-[1.02]
 ">
 
             <div class="relative overflow-hidden">
             <img src="assets/imgs/banner-barber-premium.png"
-                class="w-full h-44 object-cover group-hover:scale-105 transition duration-500">
+                class="w-full h-44 group-hover:scale-105 transition duration-500">
             </div>
 
             <div class="p-4">
@@ -529,17 +506,21 @@
 
             <div class="flex gap-2 flex-wrap text-[10px]">
                 <span class="bg-blue-500/10 text-blue-400 px-2 py-1 rounded">
-                SEO
+                Tailwind
                 </span>
                 <span class="bg-blue-500/10 text-blue-400 px-2 py-1 rounded">
-                HTML
+                JS
+                </span>
+                <span class="bg-blue-500/10 text-blue-400 px-2 py-1 rounded">
+                HTML 
+                </span>
+                <span class="bg-blue-500/10 text-blue-400 px-2 py-1 rounded">
+                CSS
                 </span>
             </div>
             </div>
         </div>
-
-        <!-- CARD 3 -->
-        <div onclick="openModal('3')"
+        <div
             class="group cursor-pointer bg-slate-900/60 backdrop-blur-sm rounded-xl overflow-hidden border border-white/5 hover:border-blue-500/40 transition hover:scale-[1.02]
 ">
 
@@ -566,8 +547,6 @@
                 </span>
             </div>
             </div>
-        </div>
-
         </div>
     </div>
     </section>
@@ -647,7 +626,7 @@
                 </p>
 
                 <!-- MINI STATS -->
-                <div class="flex gap-12 mb-12">
+                <div class="flex gap-10 mb-12">
 
                 <div>
                     <p class="font-bold text-blue-400 inline-block text-xl">+</p><h4 class="inline-block text-3xl font-bold text-blue-400 counter" data-target="10">0</h4>
