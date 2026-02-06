@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Rafael Almeida | Advocacia Estratégica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: "#0B1C2D",
+        secondary: "#1F3A5F",
+        accent: "#C6A95E",
+        light: "#F5F3EE",
+        dark: "#0A0F1A",
+      },
+      fontFamily: {
+        display: ["Playfair Display", "serif"],
+        body: ["Inter", "sans-serif"],
+      }
+    }
+  }
+}
+</script>
+
+
+<body class="bg-light text-dark">
+
+    <header id="header" class="fixed w-full z-50 transition-all duration-500">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center text-white">
+
+            <!-- Logo -->
+            <img src="imgs/logo_full.png" class="w-20" alt="Logo Rafael Almeida Advocacia">
+
+            <!-- MENU DESKTOP -->
+            <nav class="hidden md:flex space-x-10 text-sm uppercase tracking-widest">
+                
+                <a href="#" class="relative group pb-2 hover:text-accent">
+                    Home
+                    <span class="absolute left-0 bottom-0 h-[2px] w-0 bg-accent transition-all duration-300 group-hover:w-full"></span>
+                </a>
+
+                <a href="#sobre" class="relative group pb-2 hover:text-accent">
+                    Quem Somos
+                    <span class="absolute left-0 bottom-0 h-[2px] w-0 bg-accent transition-all duration-300 group-hover:w-full"></span>
+                </a>
+
+                <a href="#areas" class="relative group pb-2 hover:text-accent">
+                    Atuação
+                    <span class="absolute left-0 bottom-0 h-[2px] w-0 bg-accent transition-all duration-300 group-hover:w-full"></span>
+                </a>
+
+                <a href="#footer" class="relative group pb-2 hover:text-accent">
+                    Contato
+                    <span class="absolute left-0 bottom-0 h-[2px] w-0 bg-accent transition-all duration-300 group-hover:w-full"></span>
+                </a>
+            </nav>
+
+            <!-- BOTÃO MOBILE -->
+            <button id="menu-btn" class="md:hidden flex flex-col space-y-1 z-50">
+                <span class="w-6 h-0.5 bg-white transition-all duration-300"></span>
+                <span class="w-6 h-0.5 bg-white transition-all duration-300"></span>
+                <span class="w-6 h-0.5 bg-white transition-all duration-300"></span>
+            </button>
+        </div>
+
+        <!-- MENU MOBILE -->
+        <div id="mobile-menu"
+            class="fixed inset-0 bg-gradient-to-br from-primary via-dark to-secondary backdrop-blur-xl flex flex-col justify-between text-white transform translate-x-full transition-transform duration-500 md:hidden">
+
+            <!-- Parte Superior -->
+            <div class="flex flex-col items-center justify-center flex-1 px-8 text-center">
+
+                <!-- Linha decorativa -->
+                <div class="w-16 h-[2px] bg-accent mb-10"></div>
+
+                <!-- Links -->
+                <div class="space-y-8 text-2xl uppercase tracking-widest">
+
+                    <a href="#" class="mobile-link block hover:text-accent transition">
+                        Home
+                    </a>
+
+                    <a href="#sobre" class="mobile-link block hover:text-accent transition">
+                        Quem Somos
+                    </a>
+
+                    <a href="#areas" class="mobile-link block hover:text-accent transition">
+                        Atuação
+                    </a>
+
+                    <a href="#footer" class="mobile-link block hover:text-accent transition">
+                        Contato
+                    </a>
+
+                </div>
+
+                <!-- CTA -->
+                <a href="https://wa.me/SEUNUMEROAQUI"
+                    target="_blank"
+                    class="mt-12 inline-block bg-accent text-dark px-8 py-4 rounded-full font-semibold tracking-wide text-sm transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                    FALAR NO WHATSAPP
+                </a>
+
+            </div>
+
+            <!-- Mini Footer -->
+            <div class="border-t border-white/10 text-center py-6 text-sm text-gray-400 px-6">
+
+                <p class="tracking-wide">
+                    Atendimento sob agendamento
+                </p>
+
+                <p class="mt-2 text-xs text-gray-500">
+                    © 2026 Rafael Almeida Advocacia
+                </p>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- HERO CARROSSEL -->
+    <section class="relative h-screen flex items-center justify-center text-white overflow-hidden">
+
+        <!-- Slides -->
+        <div class="slide active">
+            <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad"
+                class="w-full h-full object-cover">
+        </div>
+
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85"
+                class="w-full h-full object-cover">
+        </div>
+
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f"
+                class="w-full h-full object-cover">
+        </div>
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-primary/80"></div>
+
+        <!-- Texto -->
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h2 class="font-display text-4xl md:text-6xl leading-tight mb-6">
+            <span id="typing"></span>
+            </h2>
+            <p class="text-lg md:text-xl text-gray-200">
+            Advocacia estratégica com excelência técnica e compromisso absoluto.
+            </p>
+        </div>
+
+    </section>
+    <section class="relative -mt-20 z-20 px-6">
+        <div class="reveal max-w-5xl mx-auto bg-white rounded-3xl shadow-2xl py-5 px-8 text-center overflow-hidden">
+
+            <h3 class="text-3xl font-display mb-5 text-dark">
+            Prêmios e Certificações
+            </h3>
+
+            <!-- Slider Container -->
+            <div class="relative">
+                <!-- Botão Esquerda -->
+                <button id="prev"
+                    class="absolute left-0 top-1/2 -translate-y-1/2 bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-secondary transition z-10">
+                    ‹
+                </button>
+
+                <!-- Área visível -->
+                <div class="overflow-hidden">
+                    <div id="slider"
+                    class="flex transition-transform duration-500 ease-in-out">
+                        <!-- Item -->
+                        <div class="slide-item flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex justify-center">
+                            <img src="imgs/c1.png"
+                            class="h-24 object-contain">
+                        </div>
+
+                        <div class="slide-item flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex justify-center">
+                            <img src="imgs/c2.png"
+                            class="h-24 object-contain">
+                        </div>
+
+                        <div class="slide-item flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex justify-center">
+                            <img src="imgs/c1.png"
+                            class="h-24 object-contain">
+                        </div>
+
+                        <div class="slide-item flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex justify-center">
+                            <img src="imgs/c2.png"
+                            class="h-24 object-contain">
+                        </div>
+
+                        <div class="slide-item flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex justify-center">
+                            <img src="imgs/c1.png"
+                            class="h-24 object-contain">
+                        </div>
+                        <div class="slide-item flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex justify-center">
+                            <img src="imgs/c1.png"
+                            class="h-24 object-contain">
+                        </div>
+
+                        <div class="slide-item flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex justify-center">
+                            <img src="imgs/c2.png"
+                            class="h-24 object-contain">
+                        </div>
+
+                        <div class="slide-item flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex justify-center">
+                            <img src="imgs/c1.png"
+                            class="h-24 object-contain">
+                        </div>
+
+                        <div class="slide-item flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex justify-center">
+                            <img src="imgs/c2.png"
+                            class="h-24 object-contain">
+                        </div>
+
+                        <div class="slide-item flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex justify-center">
+                            <img src="imgs/c1.png"
+                            class="h-24 object-contain">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botão Direita -->
+                <button id="next"
+                    class="absolute right-0 top-1/2 -translate-y-1/2 bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-secondary transition z-10">
+                    ›
+                </button>
+                </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="relative -mt-40 pt-40 pb-28 bg-gradient-to-br from-primary via-dark to-secondary text-white overflow-hidden">
+
+        <div class="max-w-7xl mt-20 mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
+
+            <!-- LADO ESQUERDO -->
+            <div class="reveal-left">
+                <span class="text-gray-300 text-lg tracking-wide">Nosso</span>
+                <h2 class="font-display text-5xl md:text-6xl text-accent mb-8">
+                    Propósito
+                </h2>
+
+                <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                    Somos um escritório especializado em
+                    <span class="text-white font-semibold">
+                    Direito Empresarial, Estratégico e Proteção Patrimonial.
+                    </span>
+                </p>
+
+                <p class="text-gray-400 leading-relaxed mb-10">
+                    Nosso compromisso é oferecer estrutura jurídica sólida para empresas e empresários
+                    que buscam crescimento com segurança e previsibilidade, atuando de forma estratégica,
+                    técnica e orientada a resultados sustentáveis.
+                </p>
+
+                <a href="#contato"
+                    class="inline-block bg-accent text-dark px-8 py-4 rounded-full font-semibold tracking-wide hover:scale-105 transition">
+                    CONHEÇA
+                </a>
+            </div>
+
+            <!-- LADO DIREITO -->
+            <div class="reveal-right relative flex justify-center">
+
+                <!-- Card Oval -->
+                <div class="bg-white text-dark rounded-[120px] px-16 py-20 max-w-lg text-center shadow-2xl relative">
+
+                    <p class="text-gray-700 leading-relaxed mb-8">
+                    “Atuamos para garantir segurança jurídica estratégica,
+                    oferecendo respaldo técnico e visão empresarial para que
+                    nossos clientes tomem decisões com confiança,
+                    protejam seus ativos e avancem com solidez.”
+                    </p>
+
+                    <div>
+                    <h4 class="font-semibold">Rafael Almeida</h4>
+                    <p class="text-sm text-gray-500">Advogado Fundador</p>
+                    </div>
+                </div>
+
+                <!-- Foto Circular -->
+                <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296"
+                    class="absolute -top-10 w-28 h-28 object-cover rounded-full border-4 border-white shadow-lg"
+                    alt="Advogado">
+
+            </div>
+
+        </div>
+
+        </section>
+        <!-- Áreas de Atuação -->
+        <section id="areas" class="relative py-32 bg-gradient-to-b from-dark to-primary text-white overflow-hidden">
+
+            <div class="max-w-7xl mx-auto px-6 text-center">
+
+                <span class="reveal text-gray-400 tracking-widest uppercase text-sm">
+                    Especialidades
+                </span>
+
+                <h3 class="reveal font-display text-4xl md:text-5xl text-accent mt-4 mb-20">
+                    Áreas de Atuação
+                </h3>
+
+                <div class="grid md:grid-cols-3 gap-12">
+
+                    <!-- Card -->
+                    <div class="reveal group border border-white/10 rounded-3xl p-12 backdrop-blur-sm hover:border-accent transition-all duration-500 hover:-translate-y-2">
+
+                        <div class="text-accent text-4xl mb-6">
+                            ⚖
+                        </div>
+
+                        <h4 class="text-2xl font-semibold mb-6">
+                            Direito Empresarial
+                        </h4>
+
+                        <p class="text-gray-400 leading-relaxed">
+                            Estruturação societária, contratos estratégicos e assessoria jurídica completa para empresas que buscam crescimento sólido e seguro.
+                        </p>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="reveal group border border-white/10 rounded-3xl p-12 backdrop-blur-sm hover:border-accent transition-all duration-500 hover:-translate-y-2">
+
+                        <div class="text-accent text-4xl mb-6">
+                            📜
+                        </div>
+
+                        <h4 class="text-2xl font-semibold mb-6">
+                            Direito Civil
+                        </h4>
+
+                        <p class="text-gray-400 leading-relaxed">
+                            Atuação estratégica em responsabilidade civil, disputas contratuais e defesa patrimonial com foco em resultados consistentes.
+                        </p>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="reveal group border border-white/10 rounded-3xl p-12 backdrop-blur-sm hover:border-accent transition-all duration-500 hover:-translate-y-2">
+
+                        <div class="text-accent text-4xl mb-6">
+                            🛡
+                        </div>
+
+                        <h4 class="text-2xl font-semibold mb-6">
+                            Consultoria Jurídica
+                        </h4>
+
+                        <p class="text-gray-400 leading-relaxed">
+                            Planejamento preventivo e orientação estratégica para reduzir riscos e fortalecer decisões empresariais.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+    <!-- Depoimentos -->
+        <section class="relative py-32 bg-dark text-white overflow-hidden">
+            <div class="max-w-5xl mx-auto px-6 text-center">
+                <span class="reveal text-gray-400 tracking-widest uppercase text-sm">
+                    Reconhecimento
+                </span>
+                <h3 class="reveal font-display text-4xl md:text-5xl text-accent mt-4 mb-20">
+                    O Que Dizem Nossos Clientes
+                </h3>
+                <div class="space-y-12">
+                    <!-- Depoimento -->
+                    <div class="reveal-left relative border border-white/10 rounded-3xl p-12 text-left hover:border-accent transition-all duration-500">
+
+                        <div class="absolute -top-6 left-10 text-7xl text-accent opacity-20 font-display">
+                            “
+                        </div>
+
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            Profissional extremamente estratégico e técnico. Sua atuação trouxe previsibilidade
+                            e segurança jurídica para nossa empresa em momentos decisivos.
+                        </p>
+
+                        <div class="mt-8">
+                            <h4 class="font-semibold text-white">
+                                Diretor Executivo
+                            </h4>
+                            <p class="text-sm text-gray-500">
+                                Empresa do Setor Empresarial
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Depoimento -->
+                    <div class="reveal-right relative border border-white/10 rounded-3xl p-12 text-left hover:border-accent transition-all duration-500">
+
+                        <div class="absolute -top-6 left-10 text-7xl text-accent opacity-20 font-display">
+                            “
+                        </div>
+
+                        <p class="text-gray-300 leading-relaxed text-lg">
+                            Atendimento claro, objetivo e altamente qualificado. 
+                            Recomendo para quem busca respaldo jurídico sólido e estratégico.
+                        </p>
+
+                        <div class="mt-8">
+                            <h4 class="font-semibold text-white">
+                                Empresário
+                            </h4>
+                            <p class="text-sm text-gray-500">
+                                Cliente Pessoa Física
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CTA Contato -->
+        <section id="contato" class="relative py-32 bg-gradient-to-br from-primary via-dark to-secondary text-white text-center overflow-hidden">
+            <div class="reveal max-w-4xl mx-auto px-6">
+                <span class="text-gray-400 tracking-widest uppercase text-sm">
+                    Atendimento Exclusivo
+                </span>
+                <h3 class="font-display text-4xl md:text-5xl text-accent mt-4 mb-8">
+                    Agende uma Consulta Estratégica
+                </h3>
+                <p class="text-gray-300 text-lg max-w-2xl mx-auto leading-relaxed mb-12">
+                    Fale diretamente conosco pelo WhatsApp e receba orientação jurídica
+                    personalizada, com total sigilo e compromisso.
+                </p>
+                <a href="https://wa.me/SEUNUMEROAQUI"
+                target="_blank"
+                class="inline-block bg-accent text-dark px-12 py-5 rounded-full font-semibold tracking-wide text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                    FALAR PELO WHATSAPP
+                </a>
+                <p class="text-gray-500 text-sm mt-8">
+                    Atendimento sob agendamento.
+                </p>
+            </div>
+        </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-black text-gray-400 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <!-- Logo + Sobre -->
+                <div>
+                    <img src="imgs/logo_full.png" class="w-28 mb-6" alt="Logo Rafael Almeida">
+
+                    <p class="text-gray-500 leading-relaxed text-sm">
+                        Advocacia estratégica com foco em segurança jurídica,
+                        visão empresarial e resultados sustentáveis.
+                    </p>
+                </div>
+                <!-- Navegação -->
+                <div>
+                    <h4 class="text-white font-semibold mb-6 tracking-wide">
+                        Navegação
+                    </h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="hover:text-accent transition">Home</a></li>
+                        <li><a href="#sobre" class="hover:text-accent transition">Quem Somos</a></li>
+                        <li><a href="#areas" class="hover:text-accent transition">Áreas de Atuação</a></li>
+                        <li><a href="#contato" class="hover:text-accent transition">Contato</a></li>
+                    </ul>
+                </div>
+                <!-- Contato -->
+                <div>
+                    <h4 class="text-white font-semibold mb-6 tracking-wide">
+                        Contato
+                    </h4>
+
+                    <ul class="space-y-3 text-sm">
+                        <li>Email: contato@rafaelalmeida.com.br</li>
+                        <li>Telefone: (11) 99999-9999</li>
+                        <li>WhatsApp: (11) 99999-9999</li>
+                    </ul>
+                </div>
+                <!-- Localização -->
+                <div>
+                    <h4 class="text-white font-semibold mb-6 tracking-wide">
+                        Localização
+                    </h4>
+
+                    <p class="text-sm leading-relaxed">
+                        Av. Paulista, 1000<br>
+                        Bela Vista – São Paulo/SP<br>
+                        CEP 01310-100
+                    </p>
+                </div>
+            </div>
+            <!-- Linha Divisória -->
+            <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
+                <p>
+                    © 2026 Dr. Rafael Almeida – Todos os direitos reservados.
+                </p>
+                <p class="mt-4 md:mt-0">
+                    Desenvolvido pelo <a href="https://ecarrascosa-dev.github.io/projetos-carrascosa/site_vendas/" target="_blank">Eduardo Carrascosa</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
