@@ -56,7 +56,7 @@ setInterval(nextSlideCarrossel, 3000);
 // EFEITO DIGITANDO
 const text = "Combatividade. Confidencialidade. Técnica.";
 let index = 0;
-const speed = 50;
+const speed = 100;
 
 function typeEffect() {
   if (index < text.length) {
@@ -95,7 +95,7 @@ nextBtn.addEventListener("click", nextSlide);
 prevBtn.addEventListener("click", prevSlide);
 
 // Auto Slide
-setInterval(nextSlide, 2000);
+setInterval(nextSlide, 4000);
 
 // Animações
 // ===== SCROLL REVEAL =====
