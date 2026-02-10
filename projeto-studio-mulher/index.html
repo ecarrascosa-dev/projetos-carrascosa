@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Studio Mulher</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&family=Allura&display=swap" rel="stylesheet">
+
+<!-- Tailwind -->
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-white">
+
+<!-- HEADER -->
+<header id="header" class="fixed top-0 left-0 w-full h-20 flex items-center justify-between px-8 bg-black/70 text-white z-50">
+  <h1 class="text-2xl font-[Playfair Display]">Studio Mulher</h1>
+  <nav class="space-x-6 hidden md:block">
+    <a href="#quem-somos">Quem Somos</a>
+    <a href="#servicos">Serviços</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="h-screen bg-cover bg-center flex items-center justify-center text-white text-center"
+style="background-image: url('assets/imagens/background-main-vertical.jpg');">
+  <div class="bg-black/40 p-10 rounded-xl">
+    <h2 class="text-4xl md:text-6xl font-[Playfair Display]">Realçando Sua Beleza Natural</h2>
+    <p class="mt-4 text-lg font-[Lato]">Um espaço criado para cuidar de você.</p>
+  </div>
+</section>
+
+<!-- QUEM SOMOS -->
+<section id="quem-somos" class="py-20 px-6 max-w-5xl mx-auto text-center">
+  <h2 class="text-4xl font-[Playfair Display] mb-6">Quem Somos</h2>
+  <p class="text-lg font-[Lato] leading-relaxed">
+    O <strong>Studio Mulher</strong> nasceu com o propósito de valorizar a essência feminina.
+    Oferecemos um ambiente acolhedor, moderno e pensado para proporcionar bem-estar,
+    autoestima e confiança em cada atendimento.
+  </p>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos" class="relative bg-[#4A2E2A] py-20 px-6">
+
+  <span class="absolute left-1/2 -translate-x-1/2 -top-10 text-[80px] md:text-[120px] font-[Allura] text-[#D97B93] opacity-20 select-none">
+    Beleza
+  </span>
+
+  <div class="text-center text-white relative z-10">
+    <h2 class="text-4xl font-[Playfair Display]">Explore Nossos Serviços</h2>
+    <p class="mt-2 font-[Lato] opacity-80">Especialidades pensadas para você brilhar.</p>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-16 max-w-6xl mx-auto">
+
+    <div class="group relative h-72 rounded-xl overflow-hidden cursor-pointer">
+      <img src="assets/imagens/corte-femenino.png" class="w-full h-full object-cover transition duration-500 group-hover:grayscale group-hover:scale-110">
+      <span class="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition duration-500"></span>
+      <h3 class="absolute inset-0 flex items-center justify-center text-white text-xl font-semibold">
+        Corte Feminino
+      </h3>
+    </div>
+
+    <div class="group relative h-72 rounded-xl overflow-hidden cursor-pointer">
+      <img src="assets/imagens/coloracao.png" class="w-full h-full object-cover transition duration-500 group-hover:grayscale group-hover:scale-110">
+      <span class="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition duration-500"></span>
+      <h3 class="absolute inset-0 flex items-center justify-center text-white text-xl font-semibold">
+        Coloração
+      </h3>
+    </div>
+
+    <div class="group relative h-72 rounded-xl overflow-hidden cursor-pointer">
+      <img src="assets/imagens/design-sombrancelha.png" class="w-full h-full object-cover transition duration-500 group-hover:grayscale group-hover:scale-110">
+      <span class="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition duration-500"></span>
+      <h3 class="absolute inset-0 flex items-center justify-center text-white text-xl font-semibold">
+        Design de Sobrancelhas
+      </h3>
+    </div>
+
+    <div class="group relative h-72 rounded-xl overflow-hidden cursor-pointer">
+      <img src="assets/imagens/tratamento-capilar.png" class="w-full h-full object-cover transition duration-500 group-hover:grayscale group-hover:scale-110">
+      <span class="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition duration-500"></span>
+      <h3 class="absolute inset-0 flex items-center justify-center text-white text-xl font-semibold">
+        Tratamentos Capilares
+      </h3>
+    </div>
+
+  </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
