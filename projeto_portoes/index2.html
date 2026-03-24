@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T.C Manutenções</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/13c88f5cf0.js" crossorigin="anonymous"></script>   
+    <style type="text/tailwindcss">
+        @theme {
+            --color-primary: #0B1F3A;
+            --color-segundary: #030712;
+            --color-cards: #364153;
+            --color-cards2: #155dfb33;
+            --color-destac: #2F6BFF;
+            --color-hover: #4D8DFF;
+         
+            --color-whatsapp: #22C55E;
+
+           --font-heading: "Poppins", sans-serif;
+           --font-body: "Inter", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-primary font-body h-[2000px]"> 
+    <header class="hidden | md:fixed lg:flex lg:flex-row lg:justify-center lg:items-center lg:bg-primary lg:border lg:border-b-destac lg:w-full lg:h-20 lg:z-50">
+        <div>
+            <img src="images/logo_full.png" class="w-30" alt="Logo T.C Portões">
+        </div>
+        <nav class="px-28">
+            <a href="#" class="text-gray-300 font-body text-xl px-5">Início</a>
+            <a href="#" class="text-gray-300 font-body text-xl px-5">Serviços</a>
+            <a href="#" class="text-gray-300 font-body text-xl px-5">Sobre</a>
+            <a href="#" class="text-gray-300 font-body text-xl px-5">Contato</a>
+        </nav>    
+        <div class="flex flex-row items-center">
+            <span class="material-symbols-outlined text-destac h-6 pr-2" style="font-size: 30px;">phone_enabled</span>
+            <div class="text-white">
+                <p class="text-xs font-light">Ligue Agora</p>
+                <p class="font-bold">(11) 99999-9999</p>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER MOBILE -->
+    <header class="lg:hidden fixed w-full bg-primary z-50">
+        <div class="flex justify-between items-center px-4 h-16">
+            <img src="images/logo_full.png" class="w-28" alt="Logo">
+            <!-- BOTÃO HAMBURGUER -->
+            <button id="menuBtn" class="text-white text-3xl">
+            <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+
+    <!-- MENU LATERAL -->
+    <div id="menu"
+    class="fixed top-0 right-0 w-72 h-full bg-segundary transform translate-x-full transition duration-300 z-50">
+        <!-- HEADER MENU -->
+        <div class="flex justify-between items-center p-5 border-b border-border">
+            <h2 class="text-white font-heading text-lg">Menu</h2>
+          <button id="closeBtn" class="text-white text-2xl">✕</button>
+        </div>
+        <!-- LINKS -->
+        <nav class="flex flex-col p-5 gap-6 text-lg ">
+            <a href="#" class="text-gray-300 hover:text-primary">Início</a>
+            <a href="#" class="text-gray-300 hover:text-primary">Serviços</a>
+            <a href="#" class="text-gray-300 hover:text-primary">Sobre</a>
+            <a href="#" class="text-gray-300 hover:text-primary">Contato</a>
+        </nav>
+        <!-- CONTATO -->
+        <div class="p-5 border-t border-border mt-6">
+            <p class="text-gray-400 text-sm">Ligue agora</p>
+            <p class="text-white font-bold">(11) 99999-9999</p>
+            <a href="#" class="mt-4 block bg-whatsapp text-center py-3 rounded-lg font-semibold">
+            WhatsApp
+            </a>
+        </div>
+    </div>
+
+
+<!-- OVERLAY -->
+<div id="overlay"
+class="fixed inset-0 bg-black/60 opacity-0 pointer-events-none transition z-40"></div>
+    <main>
+        <section class="bg-[url(images/background-main.png)] bg-no-repeat bg-cover flex flex-col justify-center w-full h-screen pl-6 z-10 | md:pl-20 | lg:pl-40">
+            <h1 class="text-white text-4xl font-heading pb-5 | lg:text-5xl">Especialista em<br>Manutenção de Portões</h1>
+            <p class="text-gray-300 font-light bg-w">Atendimento rápido, profissional e com garantia. <br>Cuidamos do seu portão para você ter tranquilidade e segurança</p>
+            <div class="my-10">
+                <a href="#" class="bg-destac hover:bg-hover border border-destac px-8 py-4 rounded-md text-white font-bold mr-5 ">Ligar agora</a>
+                <a href="#" class="bg-white/20 hover:bg-white/40 border border-white px-8 py-4 rounded-md text-white hover:text-black font-bold">Ver serviços <span class="pl-2">→</span></a>
+            </div>
+        </section>
+        <section id="weServies" class="flex justify-center items-center flex-col py-20">
+            <h1 class="text-white text-4xl font-heading | lg:text-5xl">Nossos Serviços</h1>
+            <p class="text-gray-400 text-xl py-2 text-center | lg:text-2xl">Oferecemos soluções completas para manutenção e automação de portões</p>
+            <div class="grid grid-cols-1 gap-5 py-10 | lg:grid-cols-4">
+                <article class="bg-cards w-80 p-5 rounded-lg border border-gray-500 hover:border-hover hover:shadow-sm hover:shadow-hover | lg:w-60">
+                    <span class="material-symbols-outlined bg-cards2 p-5 text-hover rotate-90 rounded-md" style="font-size: 2em;">build</span>
+                    <h2 class="text-white font-heading text-xl my-3">Manutenção Preventiva</h2>
+                    <p class="text-gray-400">Revisões periódicas para evitar problemas futuros e garantir o funcionamento perfeito.</p>
+                </article>
+                <article class="bg-cards w-80 p-5 rounded-lg border border-gray-500 hover:border-hover hover:shadow-sm hover:shadow-hover | lg:w-60">
+                    <span class="material-symbols-outlined bg-cards2 p-5 text-hover rounded-md" style="font-size: 2em;">settings</span>
+                    <h2 class="text-white font-heading text-xl my-3">Manutenção Corretiva</h2>
+                    <p class="text-gray-400">Reparos rápidos e eficientes para resolver qualquer problema no seu portão.</p>
+                </article>
+                <article class="bg-cards w-80 p-5 rounded-lg border border-gray-500 hover:border-hover hover:shadow-sm hover:shadow-hover | lg:w-60">
+                    <span class="material-symbols-outlined bg-cards2 p-5 text-hover rounded-md" style="font-size: 2em;">bolt</span>
+                    <h2 class="text-white font-heading text-xl my-3">Automação</h2>
+                    <p class="text-gray-400">Instalação e configuração de sistemas de abertura automática com tecnologia moderna.</p>
+                </article>
+                <article class="bg-cards w-80 p-5 rounded-lg border border-gray-500 hover:border-hover hover:shadow-sm hover:shadow-hover | lg:w-60">
+                    <span class="material-symbols-outlined bg-cards2 p-5 text-hover rounded-md" style="font-size: 2em;">speed</span>
+                    <h2 class="text-white font-heading text-xl my-3">Instalação</h2>
+                    <p class="text-gray-400">Instalação completa de portões residenciais, comerciais e industriais.</p>
+                </article>
+            </div>
+        </section>
+        <section id="whatChose" class="flex justify-center items-center flex-col bg-segundary py-16">
+            <h1 class="text-white font-heading text-center text-2xl | lg:text-4xl">Porque escolher a T.C. Manutenções?</h1>
+            <div class="grid grid-cols-1 gap-3 py-8 | lg:grid-cols-3">
+                <article class="flex justify-center items-center flex-col">
+                    <span class="material-symbols-outlined text-white bg-destac p-3 rounded-[100%] my-4" style="font-size: 2.5em;">shield</span>
+                    <h2 class="text-white font-heading text-xl">Qualidade Garantida</h2>
+                    <p class="text-gray-400 w-72 text-center | lg:w-96">Garantia de 12 meses em todos os serviços realizados</p>
+                </article>
+                <article class="flex justify-center items-center flex-col">
+                    <span class="material-symbols-outlined text-white bg-destac p-3 rounded-[100%] my-4" style="font-size: 2.5em;">shield</span>
+                    <h2 class="text-white font-heading text-xl">Qualidade Garantida</h2>
+                    <p class="text-gray-400 w-72 text-center | lg:w-96">Garantia de 12 meses em todos os serviços realizados</p>
+                </article>
+                <article class="flex justify-center items-center flex-col">
+                    <span class="material-symbols-outlined text-white bg-destac p-3 rounded-[100%] my-4" style="font-size: 2.5em;">shield</span>
+                    <h2 class="text-white font-heading text-xl">Qualidade Garantida</h2>
+                    <p class="text-gray-400 w-72 text-center | lg:w-96">Garantia de 12 meses em todos os serviços realizados</p>
+                </article>
+            </div>
+        </section>
+        <section id="weWorks" class=" overflow-hidden flex justify-center items-center flex-col py-16">
+            <h1 class="text-white font-heading text-4xl">Nossos Trabalhos</h1>
+            <p class="text-gray-400 text-1xl py-5 |">Confira alguns dos nossos serviços realizados</p>
+            <div class="grid grid-cols-1 gap-8 | lg:grid-cols-3">
+                 <div class="overflow-hidden rounded-md shadow-md">
+                    <img src="images/work1.png" 
+                        class="transition-transform uration-500 hover:scale-125 object-cover w-full h-full" 
+                        alt="Manutenção de portão">
+                </div>
+                 <div class="overflow-hidden rounded-md shadow-md">
+                    <img src="images/work2.png" 
+                        class="transition-transform duration-500 hover:scale-125 object-cover w-full h-full" 
+                        alt="Manutenção de portão">
+                </div>
+                 <div class="overflow-hidden rounded-md shadow-md">
+                    <img src="images/work3.png" 
+                        class="transition-transform duration-500 hover:scale-125 object-cover w-full h-full" 
+                        alt="Manutenção de portão">
+                </div>
+            </div>
+        </section>
+        <!-- DEPOIMENTOS -->
+        <section class="bg-[#020617] py-20 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-3xl font-semibold text-white text-center mb-12">
+                O Que Nossos Clientes Dizem
+                </h2>
+
+                <!-- CONTAINER -->
+                <div class="relative">
+                    <!-- BOTÃO ESQUERDA -->
+                    <button id="prev"
+                    class="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/10 backdrop-blur p-3 rounded-full">
+                    ←
+                    </button>
+
+                    <!-- BOTÃO DIREITA -->
+                    <button id="next"
+                    class="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/10 backdrop-blur p-3 rounded-full">
+                    →
+                    </button>
+
+                    <!-- SLIDER -->
+                    <div id="slider"
+                    class="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4">
+                        <!-- CARD -->
+                        <div class="min-w-[300px] md:min-w-[350px] bg-slate-800/60 border border-slate-700 rounded-xl p-6 relative snap-start">
+                            <!-- GOOGLE LOGO -->
+                            <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
+                            class="w-6 absolute top-4 right-4">
+                            <div class="text-yellow-400 mb-3">★★★★★</div>
+                            <p class="text-gray-300 text-sm mb-4">
+                            "Serviço excelente! Resolveram rápido e com qualidade."
+                            </p>
+                            <p class="text-white font-semibold">Maria Silva</p>
+                            <p class="text-gray-400 text-sm">São Paulo, SP</p>
+                        </div>
+
+                        <!-- CARD -->
+                        <div class="min-w-[300px] md:min-w-[350px] bg-slate-800/60 border border-slate-700 rounded-xl p-6 relative snap-start">
+                            <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
+                            class="w-6 absolute top-4 right-4">
+                            <div class="text-yellow-400 mb-3">★★★★★</div>
+                            <p class="text-gray-300 text-sm mb-4">
+                            "Atendimento rápido e preço justo."
+                            </p>
+                            <p class="text-white font-semibold">João Santos</p>
+                            <p class="text-gray-400 text-sm">SP</p>
+                        </div>
+
+                        <!-- CARD -->
+                        <div class="min-w-[300px] md:min-w-[350px] bg-slate-800/60 border border-slate-700 rounded-xl p-6 relative snap-start">
+                            <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
+                            class="w-6 absolute top-4 right-4">
+                            <div class="text-yellow-400 mb-3">★★★★★</div>
+                            <p class="text-gray-300 text-sm mb-4">
+                            "Serviço impecável, recomendo!"
+                            </p>
+                            <p class="text-white font-semibold">Carlos Oliveira</p>
+                            <p class="text-gray-400 text-sm">Guarulhos</p>
+                        </div>
+                        <div class="min-w-[300px] md:min-w-[350px] bg-slate-800/60 border border-slate-700 rounded-xl p-6 relative snap-start">
+                            <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
+                            class="w-6 absolute top-4 right-4">
+                            <div class="text-yellow-400 mb-3">★★★★★</div>
+                            <p class="text-gray-300 text-sm mb-4">
+                            "Serviço impecável, recomendo!"
+                            </p>
+                            <p class="text-white font-semibold">Carlos Oliveira</p>
+                            <p class="text-gray-400 text-sm">Guarulhos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- CTA -->
+        <section class="bg-blue-600 py-20 text-center">
+
+            <div class="max-w-3xl mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-semibold text-white mb-4">
+                Precisa de Manutenção no Seu Portão?
+                </h2>
+                <p class="text-blue-100 mb-8">
+                Entre em contato agora e agende uma visita. Atendimento emergencial disponível 24 horas!
+                </p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <a href="#"
+                    class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:scale-105 transition">
+                    📞 (11) 9 9999-9999
+                    </a>
+
+                    <a href="#"
+                    class="bg-blue-500 px-6 py-3 rounded-lg font-semibold text-white border border-white/20 hover:bg-blue-700 transition">
+                    Solicitar Orçamento
+                    </a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="bg-black text-gray-300 py-12">
+
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+
+            <!-- LOGO + DESCRIÇÃO -->
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <img src="images/logo_full.png" class="w-[80%]" alt="Logo T.C Manutenções">
+                </div>
+
+                <p class="text-sm text-gray-400 mb-6">
+                Especialistas em manutenção, instalação e automação de portões.
+                Atendimento rápido e qualidade garantida.
+                </p>
+
+                <div class="flex gap-4">
+                    <i class="fa-brands fa-instagram bg-gray-800 p-3 text-xl rounded-lg hover:bg-blue-600 transition"></i>
+                    p-2
+p-2
+p-2<i class="fa-brands fa-facebook-f bg-gray-800 p-3 text-xl rounded-lg hover:bg-blue-600 transition"></i>
+                    <i class="fa-brands fa-whatsapp bg-gray-800 p-3 text-xl rounded-lg hover:bg-blue-600 transition"></i>
+                </div>
+            </div>
+
+            <!-- LINKS -->
+            <div>
+                <h3 class="text-white font-semibold mb-4">Links Rápidos</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-blue-400">Início</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Serviços</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Sobre Nós</a></li>
+                    <li><a href="#" class="hover:text-blue-400">Contato</a></li>
+                </ul>
+            </div>
+
+            <!-- CONTATO -->
+            <div>
+                <h3 class="text-white font-semibold mb-4">Contato</h3>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li class="flex items-center gap-2">
+                    📞 (11) 9 9999-9999
+                    </li>
+
+                    <li class="flex items-center gap-2">
+                    ✉️ contato@portaotech.com.br
+                    </li>
+
+                    <li class="flex items-center gap-2">
+                    📍 São Paulo, SP
+                    </li>
+                </ul>
+            </div>
+
+            <!-- HORÁRIO -->
+            <div>
+                <h3 class="text-white font-semibold mb-4">Horário de Atendimento</h3>
+
+                <div class="space-y-3 text-sm text-gray-400">
+
+                    <div>
+                    <p class="text-white">Segunda - Sexta</p>
+                    <p>08:00 - 18:00</p>
+                    </div>
+
+                    <div>
+                    <p class="text-white">Sábado</p>
+                    <p>08:00 - 13:00</p>
+                    </div>
+
+                </div>
+
+                <button class="mt-6 bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg text-sm text-white">
+                Atendimento emergencial 24h
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- LINHA -->
+        <div class="border-t border-gray-800 mt-10 pt-6 text-center text-sm text-gray-500">
+        © 2026 PortãoTech. Todos os direitos reservados.
+        </div>
+
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

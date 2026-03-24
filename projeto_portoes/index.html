@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>T.C Manutenções</title>
+
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+<style type="text/tailwindcss">
+@theme {
+  --color-primary: #0EA5E9;
+  --color-dark: #020617;
+  --color-surface: #0F172A;
+  --color-text: #E2E8F0;
+  --color-text-muted: #94A3B8;
+  --color-whatsapp: #22C55E;
+
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+.parallax{
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+}
+
+.glow{
+box-shadow:0 0 40px #0EA5E9;
+}
+</style>
+
+</head>
+
+<body class="bg-dark text-text font-body">
+
+<!-- HEADER -->
+<header class="fixed w-full bg-black/60 backdrop-blur z-50">
+<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between">
+<h1 class="font-heading text-xl text-primary">T.C Manutenções</h1>
+<a href="#" class="bg-whatsapp px-5 py-2 rounded-lg font-semibold">WhatsApp</a>
+</div>
+</header>
+
+<!-- HERO COM PARALLAX -->
+<section class="parallax h-screen flex items-center"
+style="background-image:url('https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=1600');">
+
+<div class="bg-black/70 w-full h-full flex items-center">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<h1 class="text-5xl md:text-6xl font-heading mb-6">
+Seu portão parou?
+</h1>
+
+<p class="text-xl text-text-muted mb-8 max-w-xl">
+Conserto rápido, técnico especializado e atendimento imediato na sua região
+</p>
+
+<a href="#" class="bg-whatsapp px-10 py-5 rounded-xl font-bold glow">
+Chamar no WhatsApp
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PROBLEMA + IMAGEM -->
+<section class="py-20">
+
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+
+<div>
+<h2 class="text-4xl font-heading mb-6">
+Problemas com seu portão?
+</h2>
+
+<p class="text-text-muted mb-6">
+Travando, não abre, faz barulho ou parou completamente?
+Nós resolvemos rápido e com garantia.
+</p>
+
+<a href="#" class="bg-whatsapp px-6 py-3 rounded-lg font-semibold">
+Resolver agora
+</a>
+
+</div>
+
+<img class="rounded-xl shadow-lg"
+src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=800">
+
+</div>
+
+</section>
+
+<!-- SERVIÇOS COM IMAGEM -->
+<section class="py-20 bg-surface">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<h2 class="text-4xl text-center font-heading mb-16">
+Serviços
+</h2>
+
+<div class="grid md:grid-cols-3 gap-10">
+
+<div class="bg-dark rounded-xl overflow-hidden">
+
+<img src="https://images.unsplash.com/photo-1581092918484-8313c7b6f1f7">
+
+<div class="p-6">
+<h3 class="text-primary text-xl mb-2">Conserto</h3>
+<p class="text-text-muted">Reparo rápido</p>
+</div>
+
+</div>
+
+<div class="bg-dark rounded-xl overflow-hidden">
+
+<img src="https://images.unsplash.com/photo-1598257006458-087169a1f08d">
+
+<div class="p-6">
+<h3 class="text-primary text-xl mb-2">Manutenção</h3>
+<p class="text-text-muted">Prevenção completa</p>
+</div>
+
+</div>
+
+<div class="bg-dark rounded-xl overflow-hidden">
+
+<img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115">
+
+<div class="p-6">
+<h3 class="text-primary text-xl mb-2">Instalação</h3>
+<p class="text-text-muted">Automatização</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PARALLAX DIFERENCIAL -->
+<section class="parallax py-32 text-center"
+style="background-image:url('https://images.unsplash.com/photo-1605276373954-0c4a0dac5b12');">
+
+<div class="bg-black/70 py-20">
+
+<h2 class="text-4xl font-heading mb-6">
++850 Portões Consertados
+</h2>
+
+<p class="text-text-muted">
+Mais de 10 anos de experiência
+</p>
+
+</div>
+
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="py-20 text-center">
+
+<h2 class="text-3xl font-heading mb-10">
+Clientes satisfeitos
+</h2>
+
+<div class="max-w-3xl mx-auto space-y-6">
+
+<div class="bg-surface p-6 rounded-xl">
+⭐⭐⭐⭐⭐<br>
+"Resolveu meu problema no mesmo dia"
+</div>
+
+<div class="bg-surface p-6 rounded-xl">
+⭐⭐⭐⭐⭐<br>
+"Serviço rápido e profissional"
+</div>
+
+</div>
+
+</section>
+
+<!-- CTA FINAL -->
+<section class="py-24 text-center bg-primary">
+
+<h2 class="text-3xl font-heading mb-6">
+Fale com um técnico agora
+</h2>
+
+<a href="#" class="bg-whatsapp px-10 py-4 rounded-lg font-bold">
+Chamar no WhatsApp
+</a>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="py-10 text-center text-text-muted bg-black">
+
+<p>© 2026 T.C Manutenções</p>
+
+</footer>
+
+<!-- BOTÃO -->
+<a href="#"
+class="fixed bottom-6 right-6 bg-whatsapp p-5 rounded-full shadow-lg animate-bounce">
+💬
+</a>
+
+</body>
+</html>
