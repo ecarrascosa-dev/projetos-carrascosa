@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T.C Manutenções</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/13c88f5cf0.js" crossorigin="anonymous"></script>   
+    <style type="text/tailwindcss">
+
+        @theme {
+            --color-primary: #0B1F3A;
+            --color-segundary: #030712;
+            --color-terceiro: #2f3d52; 
+            --color-quarta: #101828;
+            --color-cards: #364153;
+            --color-cards2: #155dfb33;
+            --color-destac: #2F6BFF;
+            --color-hover: #4D8DFF;
+         
+            --color-whatsapp: #22C55E;
+
+           --font-heading: "Poppins", sans-serif;
+           --font-body: "Inter", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-primary font-body"> 
+    <header class="hidden | md:fixed lg:flex lg:flex-row lg:justify-center lg:items-center lg:bg-primary lg:border lg:border-b-destac lg:w-full lg:h-20 lg:z-50">
+        <div>
+            <img src="images/logo_full.png" class="w-30" alt="Logo T.C Portões">
+        </div>
+        <nav class="px-28">
+            <a href="index.html" class="text-gray-300 font-body text-xl px-5">Início</a>
+            <a href="servicos.html" class="text-gray-300 font-body text-xl px-5">Serviços</a>
+            <a href="contato.html" class="text-gray-300 font-body text-xl px-5">Contato</a>
+        </nav>    
+        <div class="flex flex-row items-center">
+            <span class="material-symbols-outlined text-destac h-6 pr-2" style="font-size: 30px;">phone_enabled</span>
+            <div class="text-white">
+                <p class="text-xs font-light">Ligue Agora</p>
+                <p class="font-bold">(11) 99999-9999</p>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER MOBILE -->
+    <header class="lg:hidden fixed w-full bg-primary z-50">
+        <div class="flex justify-between items-center px-4 h-16">
+            <img src="images/logo_full.png" class="w-28" alt="Logo">
+            <!-- BOTÃO HAMBURGUER -->
+            <button id="menuBtn" class="text-white text-3xl">
+            <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+
+    <!-- MENU LATERAL -->
+    <div id="menu"
+    class="fixed top-0 right-0 w-72 h-full bg-segundary transform translate-x-full transition duration-300 z-50">
+        <!-- HEADER MENU -->
+         <div class="flex justify-between items-center p-5 border-b border-border">
+            <h2 class="text-white font-heading text-lg">Menu</h2>
+          <button id="closeBtn" class="text-white text-2xl">✕</button>
+        </div>
+        <!-- LINKS -->
+        <nav class="flex flex-col p-5 gap-6 text-lg ">
+            <a href="index.html" class="text-gray-300 hover:text-primary">Início</a>
+            <a href="servicos.html" class="text-gray-300 hover:text-primary">Serviços</a>
+            <a href="contato.html" class="text-gray-300 hover:text-primary">Contato</a>
+        </nav>
+        <!-- CONTATO -->
+        <div class="p-5 border-t border-border mt-6">
+            <p class="text-gray-400 text-sm">Ligue agora</p>
+            <p class="text-white font-bold">(11) 99999-9999</p>
+            <a href="#" class="mt-4 block bg-whatsapp text-center py-3 rounded-lg font-semibold">
+            WhatsApp
+            </a>
+        </div>
+    </div>
+    <!-- OVERLAY -->
+<div id="overlay"
+class="fixed inset-0 bg-black/60 opacity-0 pointer-events-none transition z-40"></div>
+
+  <!-- HERO -->
+<section class="bg-linear-to-r from-[#155dfb] to-[#193cb8] py-28 text-center pt-40 text-white">
+    <h1 class="text-4xl font-heading mb-2">Entre em Contato</h1>
+    <p class="text-lg opacity-80">
+      Estamos prontos para atender você. Entre em contato e receba um orçamento gratuito!
+    </p>
+  </section>
+
+  <!-- CONTATO CARDS -->
+  <section class="bg-quarta  py-1 px-6">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-4 gap-6 relative bottom-14">
+
+      <div class="bg-terceiro p-2 rounded-xl text-center shadow-md border-2 border-gray-500 hover:border-destac hover:border-2">
+        <i class="fa-solid fa-phone span bg-cards2 p-3 m-3 text-hover text-center rounded-full text-2xl"></i>
+        <p class="font-bold text-white">Telefone</p>
+        <p class="mt-2 font-semibold text-gray-400">(11) 99999-9999</p>
+      </div>
+
+      <div class="bg-terceiro p-2 rounded-xl text-center shadow-md border-2 border-gray-500 hover:border-destac hover:border-2">
+        <i class="fa-solid fa-at span bg-cards2 p-3 m-3 text-hover text-center rounded-full text-2xl"></i>
+        <p class="font-bold text-white">Email</p>
+        <p class="mt-2 font-semibold text-gray-400">contato@portatech.com.br</p>
+      </div>
+
+      <div class="bg-terceiro p-2 rounded-xl text-center shadow-md border-2 border-gray-500 hover:border-destac hover:border-2">
+        <i class="fa-solid fa-location-dot span bg-cards2 p-3 m-3 text-hover text-center rounded-full text-2xl"></i>
+        <p class="font-bold text-white">Endereço</p>
+        <p class="mt-2 font-semibold text-gray-400">
+          São Paulo - SP, Região Metropolitana
+        </p>
+      </div>
+
+      <div class="bg-terceiro p-2 rounded-xl text-center shadow-md border-2 border-gray-500 hover:border-destac hover:border-2">
+        <i class="fa-solid fa-clock span bg-cards2 p-3 m-3 text-hover text-center rounded-full text-2xl"></i>
+        <p class="font-bold text-white">Horário</p>
+        <p class="mt-2 font-semibold text-gray-400">
+          Seg-Sex: 08:00 às 18:00
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHATSAPP CTA -->
+  <section class="py-16 px-6 bg-segundary">
+    <div class="max-w-3xl mx-auto bg-whatsapp rounded-2xl p-10 text-center shadow-lg">
+      <i class="fa-brands fa-whatsapp span text-white p-3 m-3 text-hover text-center rounded-full text-8xl"></i>
+      <h2 class="text-white text-3xl font-heading mb-2">
+        Solicite Seu Orçamento pelo WhatsApp
+      </h2>
+      <p class="text-white text-lg mb-6 opacity-90">
+        Fale diretamente com nossa equipe através do WhatsApp. Atendimento rápido e personalizado!
+      </p>
+      <button class="bg-white text-whatsapp px-6 py-2 rounded-lg hover:bg-gray-200 transition">
+        <i class="fa-brands fa-whatsapp span text-whatsapp text-hover text-center rounded-full text-xl"></i>
+        Abrir WhatsApp
+      </button>
+    </div>
+  </section>
+
+  <!-- INFO CARDS -->
+  <section class="bg-quarta py-12 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
+
+      <!-- Emergencial -->
+      <div class="bg-cards p-6 rounded-xl border border-red-500">
+        <h3 class="font-heading mb-3 text-white">Atendimento Emergencial 24h</h3>
+        <p class="text-sm opacity-70 mb-4 text-gray-300">
+          Para emergências fora do horário comercial, entre em contato:
+        </p>
+        <div class="bg-red-600/40 border border-red-600 text-white p-3 rounded text-center">
+           <i class="fa-solid fa-phone span text-red-400 text-hover text-center rounded-full text-xl"></i>
+          (11) 99999-9999
+        </div>
+      </div>
+
+      <!-- Área -->
+      <div class="bg-cards p-6 rounded-xl">
+        <h3 class="font-heading mb-3 text-white">Área de Atendimento</h3>
+        <ul class="text-sm opacity-80 space-y-1 text-gray-300">
+          <li>• São Paulo (Capital)</li>
+          <li>• ABC Paulista</li>
+          <li>• Guarulhos</li>
+          <li>• Osasco e região</li>
+        </ul>
+      </div>
+
+      <!-- Pagamento -->
+      <div class="bg-cards p-6 rounded-xl">
+        <h3 class="font-heading mb-3 text-white">Formas de Pagamento</h3>
+        <ul class="text-sm opacity-80 space-y-1 text-gray-300">
+          <li>• Dinheiro</li>
+          <li>• Cartão de Crédito (até 12x)</li>
+          <li>• Cartão de Débito</li>
+          <li>• PIX</li>
+          <li>• Transferência Bancária</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+  <footer class="bg-black text-gray-300 py-12">
+
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+
+            <!-- LOGO + DESCRIÇÃO -->
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <img src="images/logo_full.png" class="w-[80%]" alt="Logo T.C Manutenções">
+                </div>
+
+                <p class="text-sm text-gray-400 mb-6">
+                Especialistas em manutenção, instalação e automação de portões.
+                Atendimento rápido e qualidade garantida.
+                </p>
+
+                <div class="flex gap-4">
+                    <i class="fa-brands fa-instagram bg-gray-800 p-3 text-xl rounded-lg hover:bg-blue-600 transition"></i>
+                    <i class="fa-brands fa-facebook-f bg-gray-800 p-3 text-xl rounded-lg hover:bg-blue-600 transition"></i>
+                    <i class="fa-brands fa-whatsapp bg-gray-800 p-3 text-xl rounded-lg hover:bg-blue-600 transition"></i>
+                </div>
+            </div>
+
+            <!-- LINKS -->
+            <div>
+                <h3 class="text-white font-semibold mb-4">Links Rápidos</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="index.html" class="hover:text-blue-400">Início</a></li>
+                    <li><a href="servicos.html" class="hover:text-blue-400">Serviços</a></li>
+                    <li><a href="contato.html" class="hover:text-blue-400">Contato</a></li>
+                </ul>
+            </div>
+
+            <!-- CONTATO -->
+            <div>
+                <h3 class="text-white font-semibold mb-4">Contato</h3>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li class="flex items-center gap-2">
+                    📞 (11) 9 9999-9999
+                    </li>
+
+                    <li class="flex items-center gap-2">
+                    ✉️ contato@portaotech.com.br
+                    </li>
+
+                    <li class="flex items-center gap-2">
+                    📍 São Paulo, SP
+                    </li>
+                </ul>
+            </div>
+
+            <!-- HORÁRIO -->
+            <div>
+                <h3 class="text-white font-semibold mb-4">Horário de Atendimento</h3>
+
+                <div class="space-y-3 text-sm text-gray-400">
+
+                    <div>
+                    <p class="text-white">Segunda - Sexta</p>
+                    <p>08:00 - 18:00</p>
+                    </div>
+
+                    <div>
+                    <p class="text-white">Sábado</p>
+                    <p>08:00 - 13:00</p>
+                    </div>
+
+                </div>
+
+                <button class="mt-6 bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg text-sm text-white">
+                Atendimento emergencial 24h
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- LINHA -->
+        <div class="border-t border-gray-800 mt-10 pt-6 text-center text-sm text-gray-500">
+        © 2026 PortãoTech. Todos os direitos reservados.
+        </div>
+    </footer>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
