@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>T.C Manutenções</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
@@ -27,7 +28,7 @@
 <body class="bg-primary font-body"> 
     <header class="hidden | md:fixed lg:flex lg:flex-row lg:justify-center lg:items-center lg:bg-primary lg:border lg:border-b-destac lg:w-full lg:h-20 lg:z-50">
         <div>
-            <img src="images/logo_full.png" class="w-30" alt="Logo T.C Portões">
+            <img src="assets/images/logo_full.png" class="w-30" alt="Logo T.C Portões">
         </div>
         <nav class="px-28">
             <a href="index.html" class="text-gray-300 font-body text-xl px-5">Início</a>
@@ -38,11 +39,11 @@
             <span class="material-symbols-outlined text-destac h-6 pr-2" style="font-size: 30px;">phone_enabled</span>
             <div class="text-white">
                 <p class="text-xs font-light">Ligue Agora</p>
-                <p class="font-bold">(11) 99999-9999</p>
+                <p class="font-bold">11 91569-9885 </p>
             </div>
         </div>
     </header>
-    <!-- HEADER MOBILE -->
+     <!-- HEADER MOBILE -->
     <header class="lg:hidden fixed w-full bg-primary z-50">
         <div class="flex justify-between items-center px-4 h-16">
             <img src="images/logo_full.png" class="w-28" alt="Logo">
@@ -58,7 +59,7 @@
     <div id="menu"
     class="fixed top-0 right-0 w-72 h-full bg-segundary transform translate-x-full transition duration-300 z-50">
         <!-- HEADER MENU -->
-        <div class="flex justify-between items-center p-5 border-b">
+        <div class="flex justify-between items-center p-5 border-b border-border">
             <h2 class="text-white font-heading text-lg">Menu</h2>
           <button id="closeBtn" class="text-white text-2xl">✕</button>
         </div>
@@ -69,10 +70,10 @@
             <a href="contato.html" class="text-gray-300 hover:text-primary">Contato</a>
         </nav>
         <!-- CONTATO -->
-        <div class="p-5 border-t mt-6">
+        <div class="p-5 border-t border-border mt-6">
             <p class="text-gray-400 text-sm">Ligue agora</p>
-            <p class="text-white font-bold">(11) 99999-9999</p>
-            <a href="#" class="mt-4 block bg-whatsapp text-center py-3 rounded-lg font-semibold">
+            <p class="text-white font-bold">11 9156-9885 </p>
+            <a href="https://wa.me/5511915699885" target="_blank" class="mt-4 block bg-whatsapp text-center py-3 rounded-lg font-semibold">
             WhatsApp
             </a>
         </div>
@@ -97,7 +98,7 @@ class="fixed inset-0 bg-black/60 opacity-0 pointer-events-none transition z-40">
             <div class="max-w-7xl mx-auto px-6">
                 <!-- SERVIÇO 1 -->
                 <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
-                    <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=800"
+                    <img src="assets/images/servicos3.png"
                     class="rounded-xl shadow-xl">
                     <div>
                     <h3 class="text-2xl font-heading text-white mb-4">
@@ -138,12 +139,12 @@ class="fixed inset-0 bg-black/60 opacity-0 pointer-events-none transition z-40">
                         Solicitar Orçamento
                         </a>
                     </div>
-                    <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115"
+                    <img src="assets/images/servicos2.png"
                     class="rounded-xl shadow-xl order-1 lg:order-2">
                 </div>
                 <!-- SERVIÇO 3 -->
                 <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
-                    <img src="https://images.unsplash.com/photo-1598257006458-087169a1f08d"
+                    <img src="assets/images/servicos3.png"
                     class="rounded-xl shadow-xl">
                     <div>
                         <h3 class="text-2xl font-heading text-white mb-4">
@@ -233,7 +234,7 @@ class="fixed inset-0 bg-black/60 opacity-0 pointer-events-none transition z-40">
                 </p>
                 <a href="#"
                 class="bg-destac hover:bg-hover px-8 py-4 rounded-lg text-white font-bold">
-                Ligar Agora (11) 99999-9999
+                Ligar Agora (11) 91569-9885 
                 </a>
             </div>
         </div>
@@ -255,9 +256,8 @@ class="fixed inset-0 bg-black/60 opacity-0 pointer-events-none transition z-40">
                 </p>
 
                 <div class="flex gap-4">
-                    <i class="fa-brands fa-instagram bg-gray-800 p-3 text-xl rounded-lg hover:bg-blue-600 transition"></i>
-                    <i class="fa-brands fa-facebook-f bg-gray-800 p-3 text-xl rounded-lg hover:bg-blue-600 transition"></i>
-                    <i class="fa-brands fa-whatsapp bg-gray-800 p-3 text-xl rounded-lg hover:bg-blue-600 transition"></i>
+                    <a href=""><i class="fa-brands fa-instagram bg-gray-800 p-3 text-xl rounded-lg hover:bg-blue-600 transition"></i></a>
+                    <a href="https://wa.me/5511915699885"><i class="fa-brands fa-whatsapp bg-gray-800 p-3 text-xl rounded-lg hover:bg-blue-600 transition"></i></a>
                 </div>
             </div>
 
@@ -276,15 +276,15 @@ class="fixed inset-0 bg-black/60 opacity-0 pointer-events-none transition z-40">
                 <h3 class="text-white font-semibold mb-4">Contato</h3>
                 <ul class="space-y-3 text-gray-400 text-sm">
                     <li class="flex items-center gap-2">
-                    📞 (11) 9 9999-9999
+                    📞 (11) 91569-9885
                     </li>
 
                     <li class="flex items-center gap-2">
-                    ✉️ contato@portaotech.com.br
+                    ✉️ tcmanutencoes.oficial@gmail.com
                     </li>
 
                     <li class="flex items-center gap-2">
-                    📍 São Paulo, SP
+                    📍 Guarulhos, SP
                     </li>
                 </ul>
             </div>
@@ -319,7 +319,6 @@ class="fixed inset-0 bg-black/60 opacity-0 pointer-events-none transition z-40">
         <div class="border-t border-gray-800 mt-10 pt-6 text-center text-sm text-gray-500">
         © 2026 PortãoTech. Todos os direitos reservados.
         </div>
-
     </footer>
     <script src="js/script.js" defer></script>
 </body>
